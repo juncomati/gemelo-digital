@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-sans/700.css";
+@import "@fontsource/ibm-plex-serif/500.css";
+@import "@fontsource/ibm-plex-serif/600.css";
+@import "@fontsource/ibm-plex-serif/700.css";
+
+@theme {
+  --color-navy-950: #071825;
+  --color-navy-900: #0a2130;
+  --color-navy-800: #0e2a3a;
+  --color-petrol-700: #12506a;
+  --color-petrol-600: #176384;
+  --color-cyan-500: #19b5d1;
+  --color-cyan-400: #3fc4db;
+  --color-teal-500: #22b8a7;
+  --color-surface-50: #eef2f6;
+  --color-surface-100: #e4ebf2;
+  --color-surface-0: #ffffff;
+  --color-border-100: #e8eef3;
+  --color-border-200: #d0dae4;
+  --color-border-300: #b3c0cd;
+  --color-text-900: #15202b;
+  --color-text-700: #3d4b5a;
+  --color-text-600: #5c6b7a;
+  --color-green-600: #16875b;
+  --color-amber-500: #e7a11a;
+  --color-red-600: #c93c43;
+  --font-sans: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  --font-display: "IBM Plex Serif", "Cambria", "Times New Roman", serif;
+  --shadow-card: 0 1px 2px rgb(7 24 37 / 4%), 0 8px 24px rgb(7 24 37 / 5%);
+  --shadow-elevated: 0 2px 4px rgb(7 24 37 / 6%), 0 16px 40px rgb(7 24 37 / 8%);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--color-text-900);
+    background-color: var(--color-surface-50);
+    background-image:
+      radial-gradient(ellipse 120% 80% at 0% -10%, rgb(25 181 209 / 8%), transparent 50%),
+      radial-gradient(ellipse 90% 60% at 100% 0%, rgb(18 80 106 / 7%), transparent 45%),
+      linear-gradient(180deg, #f2f5f8 0%, #eef2f6 40%, #e8eef3 100%);
+    background-attachment: fixed;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-cyan-500);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .card-surface {
+    background: linear-gradient(165deg, rgb(255 255 255 / 98%) 0%, rgb(255 255 255 / 94%) 100%);
+    border: 1px solid var(--color-border-200);
+    border-radius: 14px;
+    box-shadow: var(--shadow-card);
+    transition:
+      border-color 160ms var(--ease-out-soft),
+      box-shadow 160ms var(--ease-out-soft),
+      transform 160ms var(--ease-out-soft);
+  }
+
+  .card-surface-quiet {
+    background: rgb(255 255 255 / 72%);
+    border: 1px solid var(--color-border-100);
+    border-radius: 14px;
+    box-shadow: none;
+  }
+
+  .card-surface-panel {
+    background: var(--color-surface-0);
+    border: 1px solid var(--color-border-200);
+    border-radius: 14px;
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .card-surface-priority {
+    background:
+      linear-gradient(135deg, rgb(201 60 67 / 6%) 0%, transparent 42%),
+      linear-gradient(165deg, #fff 0%, #fafbfc 100%);
+    border: 1px solid rgb(201 60 67 / 28%);
+    border-left: 4px solid var(--color-red-600);
+    border-radius: 14px;
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .card-interactive:hover {
+    border-color: var(--color-cyan-500);
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .page-enter {
+    animation: page-enter 220ms var(--ease-out-soft) both;
+  }
+
+  .stat-value {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--color-text-900);
+  }
+
+  .hairline {
+    border-color: var(--color-border-200);
+  }
+
+  .app-canvas {
+    position: relative;
+  }
+
+  .app-canvas::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

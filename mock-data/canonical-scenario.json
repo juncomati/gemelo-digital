@@ -1,0 +1,933 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "seedVersion": "2026.09.18-1",
+    "demoNow": "2026-09-18T10:30:00-03:00",
+    "dataMode": "synthetic",
+    "disclaimer": "Todos los nombres, documentos, eventos, métricas e impactos son ficticios y se utilizan únicamente con fines demostrativos."
+  },
+  "tenant": {
+    "id": "tenant_andespack",
+    "name": "AndesPack Industrial S.A.",
+    "industry": "Embalajes de cartón corrugado",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "currencyLabel": "USD equivalentes",
+    "location": "San Juan, Argentina",
+    "employees": 82,
+    "activeCustomers": 126,
+    "productionLines": 2,
+    "warehouses": 3
+  },
+  "users": [
+    {
+      "id": "user_laura",
+      "tenantId": "tenant_andespack",
+      "name": "Laura Quiroga",
+      "role": "direction",
+      "area": "Dirección General",
+      "avatarInitials": "LQ"
+    },
+    {
+      "id": "user_martin",
+      "tenantId": "tenant_andespack",
+      "name": "Martín Castro",
+      "role": "owner",
+      "area": "Operaciones",
+      "avatarInitials": "MC"
+    },
+    {
+      "id": "user_sofia",
+      "tenantId": "tenant_andespack",
+      "name": "Sofía Pérez",
+      "role": "owner",
+      "area": "Comercial",
+      "avatarInitials": "SP"
+    },
+    {
+      "id": "user_valentina",
+      "tenantId": "tenant_andespack",
+      "name": "Valentina Ruiz",
+      "role": "admin",
+      "area": "Administración",
+      "avatarInitials": "VR"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source_erp",
+      "tenantId": "tenant_andespack",
+      "name": "ERP Andino",
+      "type": "erp",
+      "status": "connected",
+      "simulated": true,
+      "lastSyncAt": "2026-09-18T10:18:00-03:00"
+    },
+    {
+      "id": "source_crm",
+      "tenantId": "tenant_andespack",
+      "name": "CRM Comercial",
+      "type": "crm",
+      "status": "connected",
+      "simulated": true,
+      "lastSyncAt": "2026-09-18T10:12:00-03:00"
+    },
+    {
+      "id": "source_drive",
+      "tenantId": "tenant_andespack",
+      "name": "Google Drive",
+      "type": "drive",
+      "status": "connected",
+      "simulated": true,
+      "lastSyncAt": "2026-09-18T09:56:00-03:00"
+    },
+    {
+      "id": "source_email",
+      "tenantId": "tenant_andespack",
+      "name": "Correo corporativo",
+      "type": "email",
+      "status": "review",
+      "simulated": true,
+      "lastSyncAt": "2026-09-16T08:20:00-03:00"
+    },
+    {
+      "id": "source_sheet",
+      "tenantId": "tenant_andespack",
+      "name": "Planillas operativas",
+      "type": "spreadsheet",
+      "status": "connected",
+      "simulated": true,
+      "lastSyncAt": "2026-09-18T08:45:00-03:00"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_forecast_q4",
+      "tenantId": "tenant_andespack",
+      "title": "Pronóstico comercial Q4",
+      "category": "Comercial",
+      "sourceId": "source_crm",
+      "ownerId": "user_sofia",
+      "processingStatus": "processed",
+      "freshnessStatus": "current",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-09-18T08:30:00-03:00",
+      "knowledgeEntityIds": ["entity_product_wine6", "entity_demand_growth", "entity_risk_liner"]
+    },
+    {
+      "id": "doc_inventory",
+      "tenantId": "tenant_andespack",
+      "title": "Inventario de materias primas",
+      "category": "Operaciones",
+      "sourceId": "source_erp",
+      "ownerId": "user_martin",
+      "processingStatus": "processed",
+      "freshnessStatus": "current",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-09-18T10:15:00-03:00",
+      "knowledgeEntityIds": ["entity_liner", "entity_risk_liner"]
+    },
+    {
+      "id": "doc_open_orders",
+      "tenantId": "tenant_andespack",
+      "title": "Órdenes abiertas de clientes",
+      "category": "Comercial",
+      "sourceId": "source_erp",
+      "ownerId": "user_sofia",
+      "processingStatus": "processed",
+      "freshnessStatus": "current",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-09-18T10:10:00-03:00",
+      "knowledgeEntityIds": ["entity_product_wine6", "entity_risk_liner"]
+    },
+    {
+      "id": "doc_supplier_lead_times",
+      "tenantId": "tenant_andespack",
+      "title": "Plazos de proveedores",
+      "category": "Compras",
+      "sourceId": "source_sheet",
+      "ownerId": "user_martin",
+      "processingStatus": "processed",
+      "freshnessStatus": "review",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-08-04T12:00:00-03:00",
+      "knowledgeEntityIds": ["entity_supplier_papeles", "entity_supplier_lead_time", "entity_risk_liner"]
+    },
+    {
+      "id": "doc_product_spec_wine6",
+      "tenantId": "tenant_andespack",
+      "title": "Ficha técnica Caja Vino x6",
+      "category": "Productos",
+      "sourceId": "source_drive",
+      "ownerId": "user_martin",
+      "processingStatus": "processed",
+      "freshnessStatus": "review",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-07-02T09:00:00-03:00",
+      "knowledgeEntityIds": ["entity_product_wine6", "entity_liner"]
+    },
+    {
+      "id": "doc_discount_policy_a",
+      "tenantId": "tenant_andespack",
+      "title": "Política de descuentos 2025 — versión Comercial",
+      "category": "Políticas y procedimientos",
+      "sourceId": "source_drive",
+      "ownerId": "user_sofia",
+      "processingStatus": "processed",
+      "freshnessStatus": "stale",
+      "inconsistencyStatus": "detected",
+      "updatedAt": "2025-12-15T14:00:00-03:00",
+      "knowledgeEntityIds": ["entity_discount_policy"]
+    },
+    {
+      "id": "doc_discount_policy_b",
+      "tenantId": "tenant_andespack",
+      "title": "Política de descuentos 2025 — versión Administración",
+      "category": "Políticas y procedimientos",
+      "sourceId": "source_drive",
+      "ownerId": "user_valentina",
+      "processingStatus": "processed",
+      "freshnessStatus": "review",
+      "inconsistencyStatus": "detected",
+      "updatedAt": "2026-06-10T11:20:00-03:00",
+      "knowledgeEntityIds": ["entity_discount_policy"]
+    },
+    {
+      "id": "doc_delivery_plan",
+      "tenantId": "tenant_andespack",
+      "title": "Plan semanal de entregas",
+      "category": "Operaciones",
+      "sourceId": "source_erp",
+      "ownerId": "user_martin",
+      "processingStatus": "processed",
+      "freshnessStatus": "current",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-09-18T07:45:00-03:00",
+      "knowledgeEntityIds": ["entity_delivery_risk"]
+    },
+    {
+      "id": "doc_inactive_customers",
+      "tenantId": "tenant_andespack",
+      "title": "Clientes sin compra en 120 días",
+      "category": "Clientes",
+      "sourceId": "source_crm",
+      "ownerId": "user_sofia",
+      "processingStatus": "processed",
+      "freshnessStatus": "current",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-09-17T18:00:00-03:00",
+      "knowledgeEntityIds": ["entity_reactivation_opportunity"]
+    },
+    {
+      "id": "doc_quote_times",
+      "tenantId": "tenant_andespack",
+      "title": "Tiempos de preparación de cotizaciones",
+      "category": "Comercial",
+      "sourceId": "source_sheet",
+      "ownerId": "user_sofia",
+      "processingStatus": "processed",
+      "freshnessStatus": "current",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-09-17T17:30:00-03:00",
+      "knowledgeEntityIds": ["entity_quote_time"]
+    },
+    {
+      "id": "doc_line_changeovers",
+      "tenantId": "tenant_andespack",
+      "title": "Cambios de formato Línea 2",
+      "category": "Operaciones",
+      "sourceId": "source_sheet",
+      "ownerId": "user_martin",
+      "processingStatus": "processed",
+      "freshnessStatus": "current",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-09-16T16:00:00-03:00",
+      "knowledgeEntityIds": ["entity_line2"]
+    },
+    {
+      "id": "doc_weekly_summary",
+      "tenantId": "tenant_andespack",
+      "title": "Resumen ejecutivo semanal",
+      "category": "Estrategia",
+      "sourceId": "source_drive",
+      "ownerId": "user_laura",
+      "processingStatus": "processed",
+      "freshnessStatus": "current",
+      "inconsistencyStatus": "none",
+      "updatedAt": "2026-09-18T09:00:00-03:00",
+      "knowledgeEntityIds": ["entity_risk_liner", "entity_reactivation_opportunity", "entity_delivery_risk"]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence_demand_21",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_forecast_q4",
+      "label": "Demanda prevista",
+      "excerpt": "La demanda de Caja Vino x6 Reforzada aumenta 21% frente al promedio de las ocho semanas anteriores.",
+      "observedAt": "2026-09-18T08:30:00-03:00",
+      "confidence": 0.94,
+      "factOrEstimate": "estimate"
+    },
+    {
+      "id": "evidence_stock_9_days",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_inventory",
+      "label": "Cobertura de stock",
+      "excerpt": "El inventario disponible de papel liner 200 g cubre nueve días al ritmo previsto.",
+      "observedAt": "2026-09-18T10:15:00-03:00",
+      "confidence": 0.97,
+      "factOrEstimate": "estimate"
+    },
+    {
+      "id": "evidence_lead_12_days",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_supplier_lead_times",
+      "label": "Plazo habitual",
+      "excerpt": "Papeles Cuyo registra un plazo habitual de reposición de doce días.",
+      "observedAt": "2026-08-04T12:00:00-03:00",
+      "confidence": 0.78,
+      "factOrEstimate": "fact"
+    },
+    {
+      "id": "evidence_open_orders",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_open_orders",
+      "label": "Órdenes comprometidas",
+      "excerpt": "Las órdenes abiertas requieren mantener la producción programada de Caja Vino x6 Reforzada.",
+      "observedAt": "2026-09-18T10:10:00-03:00",
+      "confidence": 0.96,
+      "factOrEstimate": "fact"
+    },
+    {
+      "id": "evidence_inactive_14",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_inactive_customers",
+      "label": "Clientes reactivables",
+      "excerpt": "Catorce clientes sin compra reciente mantienen historial y condiciones comerciales vigentes.",
+      "observedAt": "2026-09-17T18:00:00-03:00",
+      "confidence": 0.86,
+      "factOrEstimate": "estimate"
+    },
+    {
+      "id": "evidence_quote_time",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_quote_times",
+      "label": "Tiempo de cotización",
+      "excerpt": "El tiempo medio simulado bajó de 5,2 horas a 1,4 horas.",
+      "observedAt": "2026-09-17T17:30:00-03:00",
+      "confidence": 0.9,
+      "factOrEstimate": "fact"
+    },
+    {
+      "id": "evidence_delivery_risk",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_delivery_plan",
+      "label": "Entregas expuestas",
+      "excerpt": "Dos entregas tienen una probabilidad de demora superior al umbral operativo definido.",
+      "observedAt": "2026-09-18T07:45:00-03:00",
+      "confidence": 0.82,
+      "factOrEstimate": "estimate"
+    },
+    {
+      "id": "evidence_discount_a",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_discount_policy_a",
+      "label": "Umbral comercial",
+      "excerpt": "La versión Comercial permite hasta 12% sin segunda aprobación.",
+      "observedAt": "2025-12-15T14:00:00-03:00",
+      "confidence": 0.8,
+      "factOrEstimate": "fact"
+    },
+    {
+      "id": "evidence_discount_b",
+      "tenantId": "tenant_andespack",
+      "documentId": "doc_discount_policy_b",
+      "label": "Umbral administrativo",
+      "excerpt": "La versión Administración requiere segunda aprobación desde 8%.",
+      "observedAt": "2026-06-10T11:20:00-03:00",
+      "confidence": 0.88,
+      "factOrEstimate": "fact"
+    }
+  ],
+  "twinEntities": [
+    {
+      "id": "entity_product_wine6",
+      "tenantId": "tenant_andespack",
+      "type": "product",
+      "title": "Caja Vino x6 Reforzada",
+      "description": "Embalaje de cartón corrugado para seis botellas, producido en Línea 2.",
+      "ownerId": "user_martin",
+      "confidence": 0.96,
+      "updatedAt": "2026-09-18T10:15:00-03:00",
+      "evidenceIds": ["evidence_demand_21", "evidence_open_orders"]
+    },
+    {
+      "id": "entity_liner",
+      "tenantId": "tenant_andespack",
+      "type": "fact",
+      "title": "Papel liner 200 g",
+      "description": "Materia prima crítica para Caja Vino x6 Reforzada.",
+      "ownerId": "user_martin",
+      "confidence": 0.97,
+      "updatedAt": "2026-09-18T10:15:00-03:00",
+      "evidenceIds": ["evidence_stock_9_days"]
+    },
+    {
+      "id": "entity_supplier_papeles",
+      "tenantId": "tenant_andespack",
+      "type": "supplier",
+      "title": "Papeles Cuyo",
+      "description": "Proveedor ficticio principal de papel liner.",
+      "ownerId": "user_martin",
+      "confidence": 0.87,
+      "updatedAt": "2026-08-04T12:00:00-03:00",
+      "evidenceIds": ["evidence_lead_12_days"]
+    },
+    {
+      "id": "entity_supplier_lead_time",
+      "tenantId": "tenant_andespack",
+      "type": "fact",
+      "title": "Plazo de reposición de 12 días",
+      "description": "Plazo habitual registrado para el proveedor principal.",
+      "ownerId": "user_martin",
+      "confidence": 0.78,
+      "updatedAt": "2026-08-04T12:00:00-03:00",
+      "evidenceIds": ["evidence_lead_12_days"]
+    },
+    {
+      "id": "entity_demand_growth",
+      "tenantId": "tenant_andespack",
+      "type": "hypothesis",
+      "title": "Aumento de demanda de 21%",
+      "description": "Proyección comercial para Caja Vino x6 Reforzada.",
+      "ownerId": "user_sofia",
+      "confidence": 0.94,
+      "updatedAt": "2026-09-18T08:30:00-03:00",
+      "evidenceIds": ["evidence_demand_21"]
+    },
+    {
+      "id": "entity_risk_liner",
+      "tenantId": "tenant_andespack",
+      "type": "risk",
+      "title": "Riesgo de quiebre de papel liner",
+      "description": "La cobertura de stock es menor que el plazo habitual de reposición.",
+      "ownerId": "user_martin",
+      "confidence": 0.91,
+      "updatedAt": "2026-09-18T10:20:00-03:00",
+      "evidenceIds": ["evidence_demand_21", "evidence_stock_9_days", "evidence_lead_12_days", "evidence_open_orders"]
+    },
+    {
+      "id": "entity_reactivation_opportunity",
+      "tenantId": "tenant_andespack",
+      "type": "opportunity",
+      "title": "Reactivación de 14 clientes",
+      "description": "Grupo de clientes con historial y potencial de recompra.",
+      "ownerId": "user_sofia",
+      "confidence": 0.86,
+      "updatedAt": "2026-09-17T18:00:00-03:00",
+      "evidenceIds": ["evidence_inactive_14"]
+    },
+    {
+      "id": "entity_delivery_risk",
+      "tenantId": "tenant_andespack",
+      "type": "risk",
+      "title": "Dos entregas con demora probable",
+      "description": "El plan semanal supera el umbral de riesgo definido.",
+      "ownerId": "user_martin",
+      "confidence": 0.82,
+      "updatedAt": "2026-09-18T07:45:00-03:00",
+      "evidenceIds": ["evidence_delivery_risk"]
+    },
+    {
+      "id": "entity_quote_time",
+      "tenantId": "tenant_andespack",
+      "type": "metric",
+      "title": "Tiempo de preparación de cotizaciones",
+      "description": "Indicador simulado de 1,4 horas frente a 5,2 horas de línea base.",
+      "ownerId": "user_sofia",
+      "confidence": 0.9,
+      "updatedAt": "2026-09-17T17:30:00-03:00",
+      "evidenceIds": ["evidence_quote_time"]
+    },
+    {
+      "id": "entity_discount_policy",
+      "tenantId": "tenant_andespack",
+      "type": "risk",
+      "title": "Política de descuentos inconsistente",
+      "description": "Dos versiones vigentes establecen umbrales diferentes.",
+      "ownerId": "user_valentina",
+      "confidence": 0.89,
+      "updatedAt": "2026-09-18T09:05:00-03:00",
+      "evidenceIds": ["evidence_discount_a", "evidence_discount_b"]
+    },
+    {
+      "id": "entity_line2",
+      "tenantId": "tenant_andespack",
+      "type": "process",
+      "title": "Línea 2",
+      "description": "Línea responsable de fabricar Caja Vino x6 Reforzada.",
+      "ownerId": "user_martin",
+      "confidence": 0.93,
+      "updatedAt": "2026-09-16T16:00:00-03:00",
+      "evidenceIds": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel_product_uses_liner",
+      "tenantId": "tenant_andespack",
+      "fromId": "entity_product_wine6",
+      "toId": "entity_liner",
+      "type": "utiliza",
+      "rationale": "El papel liner forma parte de la especificación del producto."
+    },
+    {
+      "id": "rel_liner_supplier",
+      "tenantId": "tenant_andespack",
+      "fromId": "entity_liner",
+      "toId": "entity_supplier_papeles",
+      "type": "abastecido por",
+      "rationale": "Papeles Cuyo es el proveedor principal simulado."
+    },
+    {
+      "id": "rel_supplier_lead",
+      "tenantId": "tenant_andespack",
+      "fromId": "entity_supplier_papeles",
+      "toId": "entity_supplier_lead_time",
+      "type": "tiene plazo",
+      "rationale": "El documento de proveedores registra doce días."
+    },
+    {
+      "id": "rel_demand_product",
+      "tenantId": "tenant_andespack",
+      "fromId": "entity_demand_growth",
+      "toId": "entity_product_wine6",
+      "type": "afecta",
+      "rationale": "La proyección se refiere al producto."
+    },
+    {
+      "id": "rel_product_risk",
+      "tenantId": "tenant_andespack",
+      "fromId": "entity_product_wine6",
+      "toId": "entity_risk_liner",
+      "type": "expuesto a",
+      "rationale": "La producción depende del papel liner."
+    },
+    {
+      "id": "rel_liner_risk",
+      "tenantId": "tenant_andespack",
+      "fromId": "entity_liner",
+      "toId": "entity_risk_liner",
+      "type": "origina",
+      "rationale": "La cobertura es menor que el plazo de reposición."
+    },
+    {
+      "id": "rel_product_line2",
+      "tenantId": "tenant_andespack",
+      "fromId": "entity_product_wine6",
+      "toId": "entity_line2",
+      "type": "producido en",
+      "rationale": "La ficha del producto asigna Línea 2."
+    }
+  ],
+  "knowledgeObjectives": [
+    {
+      "id": "objective_supplier_capacity",
+      "tenantId": "tenant_andespack",
+      "question": "¿Papeles Cuyo puede entregar capacidad extraordinaria antes del 28 de septiembre?",
+      "domain": "Compras",
+      "priority": "high",
+      "status": "open",
+      "ownerId": "user_martin"
+    },
+    {
+      "id": "objective_demand_elasticity",
+      "tenantId": "tenant_andespack",
+      "question": "¿Qué parte del aumento de demanda se mantendrá durante octubre?",
+      "domain": "Comercial",
+      "priority": "medium",
+      "status": "in_review",
+      "ownerId": "user_sofia"
+    },
+    {
+      "id": "objective_line_changeover",
+      "tenantId": "tenant_andespack",
+      "question": "¿Cuál es el tiempo actualizado de cambio de formato de Línea 2?",
+      "domain": "Operaciones",
+      "priority": "medium",
+      "status": "open",
+      "ownerId": "user_martin"
+    }
+  ],
+  "results": [
+    {
+      "id": "result_risk_liner",
+      "tenantId": "tenant_andespack",
+      "title": "Riesgo de quiebre de papel liner",
+      "type": "risk",
+      "area": "Operaciones",
+      "priority": "critical",
+      "status": "requires_approval",
+      "summary": "La cobertura estimada de nueve días es menor que el plazo habitual de reposición de doce días.",
+      "expectedImpact": "USD 18.400 equivalentes de ventas expuestas entre el 28 y el 30 de septiembre, valor estimado.",
+      "recommendation": "Adelantar una orden de compra simulada de 18 toneladas de papel liner.",
+      "confidence": 0.91,
+      "evidenceIds": ["evidence_demand_21", "evidence_stock_9_days", "evidence_lead_12_days", "evidence_open_orders"],
+      "approvalId": "approval_purchase_liner",
+      "ownerId": "user_martin",
+      "generatedAt": "2026-09-18T10:20:00-03:00"
+    },
+    {
+      "id": "result_reactivate_customers",
+      "tenantId": "tenant_andespack",
+      "title": "Oportunidad de reactivar 14 clientes",
+      "type": "opportunity",
+      "area": "Comercial",
+      "priority": "high",
+      "status": "in_review",
+      "summary": "Catorce clientes conservan condiciones comerciales vigentes y no compraron en 120 días.",
+      "expectedImpact": "USD 32.000 equivalentes de oportunidad estimada.",
+      "recommendation": "Revisar la lista y preparar una campaña comercial personalizada.",
+      "confidence": 0.86,
+      "evidenceIds": ["evidence_inactive_14"],
+      "approvalId": "approval_customer_reactivation",
+      "ownerId": "user_sofia",
+      "generatedAt": "2026-09-18T09:40:00-03:00"
+    },
+    {
+      "id": "result_delivery_risk",
+      "tenantId": "tenant_andespack",
+      "title": "Dos entregas con probabilidad de demora",
+      "type": "risk",
+      "area": "Operaciones",
+      "priority": "high",
+      "status": "new",
+      "summary": "El plan semanal supera el umbral de riesgo definido para dos entregas.",
+      "expectedImpact": "Dos compromisos comerciales podrían requerir reprogramación, estimación simulada.",
+      "recommendation": "Revisar capacidad y confirmar ventanas con Comercial.",
+      "confidence": 0.82,
+      "evidenceIds": ["evidence_delivery_risk"],
+      "ownerId": "user_martin",
+      "generatedAt": "2026-09-18T08:10:00-03:00"
+    },
+    {
+      "id": "result_expiring_specs",
+      "tenantId": "tenant_andespack",
+      "title": "Tres fichas técnicas próximas a vencer",
+      "type": "recommendation",
+      "area": "Calidad",
+      "priority": "medium",
+      "status": "new",
+      "summary": "Tres fichas requieren revisión dentro de los próximos treinta días.",
+      "expectedImpact": "Riesgo documental interno, sin impacto económico calculado.",
+      "recommendation": "Asignar revisión a Operaciones y Calidad.",
+      "confidence": 0.93,
+      "evidenceIds": [],
+      "ownerId": "user_valentina",
+      "generatedAt": "2026-09-18T08:00:00-03:00"
+    },
+    {
+      "id": "result_discount_inconsistency",
+      "tenantId": "tenant_andespack",
+      "title": "Inconsistencia en política de descuentos",
+      "type": "risk",
+      "area": "Comercial",
+      "priority": "medium",
+      "status": "requires_approval",
+      "summary": "Dos versiones definen umbrales distintos para segunda aprobación.",
+      "expectedImpact": "Riesgo de aplicar condiciones comerciales no uniformes.",
+      "recommendation": "Definir una versión vigente y archivar la anterior.",
+      "confidence": 0.89,
+      "evidenceIds": ["evidence_discount_a", "evidence_discount_b"],
+      "approvalId": "approval_discount_policy",
+      "ownerId": "user_valentina",
+      "generatedAt": "2026-09-18T09:05:00-03:00"
+    },
+    {
+      "id": "result_weekly_summary",
+      "tenantId": "tenant_andespack",
+      "title": "Resumen ejecutivo semanal",
+      "type": "report",
+      "area": "Dirección General",
+      "priority": "medium",
+      "status": "approved",
+      "summary": "Síntesis simulada de riesgos, oportunidades y decisiones de la semana.",
+      "expectedImpact": "Mejor visibilidad ejecutiva, sin ahorro atribuido.",
+      "recommendation": "Revisar prioridades y responsables.",
+      "confidence": 0.88,
+      "evidenceIds": ["evidence_demand_21", "evidence_delivery_risk", "evidence_inactive_14"],
+      "ownerId": "user_laura",
+      "generatedAt": "2026-09-18T09:00:00-03:00"
+    },
+    {
+      "id": "result_line_optimization",
+      "tenantId": "tenant_andespack",
+      "title": "Propuesta de optimización de cambios de línea",
+      "type": "analysis",
+      "area": "Operaciones",
+      "priority": "low",
+      "status": "in_review",
+      "summary": "Los registros simulados sugieren revisar la secuencia de formatos de Línea 2.",
+      "expectedImpact": "Impacto pendiente de validar con una medición controlada.",
+      "recommendation": "Actualizar tiempos y diseñar una prueba acotada.",
+      "confidence": 0.68,
+      "evidenceIds": [],
+      "ownerId": "user_martin",
+      "generatedAt": "2026-09-17T16:20:00-03:00"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "approval_purchase_liner",
+      "tenantId": "tenant_andespack",
+      "resultId": "result_risk_liner",
+      "title": "Adelantar compra de 18 toneladas de papel liner",
+      "status": "pending",
+      "requestedBy": "system",
+      "assignedTo": "user_martin",
+      "dueAt": "2026-09-18T17:00:00-03:00",
+      "estimatedCost": "USD 11.700 equivalentes, estimado",
+      "estimatedProtectedValue": "USD 18.400 equivalentes, estimado",
+      "history": [
+        {
+          "at": "2026-09-18T10:21:00-03:00",
+          "actorName": "Sistema",
+          "action": "requested",
+          "comment": "Aprobación solicitada a Operaciones."
+        }
+      ]
+    },
+    {
+      "id": "approval_customer_reactivation",
+      "tenantId": "tenant_andespack",
+      "resultId": "result_reactivate_customers",
+      "title": "Autorizar revisión comercial de 14 clientes",
+      "status": "in_review",
+      "requestedBy": "system",
+      "assignedTo": "user_sofia",
+      "dueAt": "2026-09-19T12:00:00-03:00",
+      "estimatedCost": "Sin costo externo en la demo",
+      "estimatedProtectedValue": "USD 32.000 equivalentes de oportunidad estimada",
+      "history": [
+        {
+          "at": "2026-09-18T09:42:00-03:00",
+          "actorName": "Sistema",
+          "action": "requested",
+          "comment": "Revisión asignada a Comercial."
+        }
+      ]
+    },
+    {
+      "id": "approval_discount_policy",
+      "tenantId": "tenant_andespack",
+      "resultId": "result_discount_inconsistency",
+      "title": "Definir versión vigente de la política de descuentos",
+      "status": "pending",
+      "requestedBy": "system",
+      "assignedTo": "user_valentina",
+      "dueAt": "2026-09-20T17:00:00-03:00",
+      "estimatedCost": "Sin costo calculado",
+      "estimatedProtectedValue": "Consistencia comercial",
+      "history": [
+        {
+          "at": "2026-09-18T09:06:00-03:00",
+          "actorName": "Sistema",
+          "action": "requested",
+          "comment": "Se detectaron dos umbrales incompatibles."
+        }
+      ]
+    }
+  ],
+  "activity": [
+    {
+      "id": "event_001",
+      "tenantId": "tenant_andespack",
+      "actorType": "system",
+      "actorName": "Sistema",
+      "action": "generó",
+      "entityType": "result",
+      "entityId": "result_risk_liner",
+      "summary": "Generó el resultado Riesgo de quiebre de papel liner.",
+      "createdAt": "2026-09-18T10:20:00-03:00"
+    },
+    {
+      "id": "event_002",
+      "tenantId": "tenant_andespack",
+      "actorType": "system",
+      "actorName": "Sistema",
+      "action": "solicitó aprobación",
+      "entityType": "approval",
+      "entityId": "approval_purchase_liner",
+      "summary": "Solicitó a Martín Castro revisar la compra anticipada.",
+      "createdAt": "2026-09-18T10:21:00-03:00"
+    },
+    {
+      "id": "event_003",
+      "tenantId": "tenant_andespack",
+      "actorType": "system",
+      "actorName": "Sistema",
+      "action": "actualizó",
+      "entityType": "document",
+      "entityId": "doc_inventory",
+      "summary": "Actualizó Inventario de materias primas desde una fuente simulada.",
+      "createdAt": "2026-09-18T10:15:00-03:00"
+    },
+    {
+      "id": "event_004",
+      "tenantId": "tenant_andespack",
+      "actorType": "system",
+      "actorName": "Sistema",
+      "action": "detectó",
+      "entityType": "result",
+      "entityId": "result_discount_inconsistency",
+      "summary": "Detectó dos versiones contradictorias de la política de descuentos.",
+      "createdAt": "2026-09-18T09:05:00-03:00"
+    },
+    {
+      "id": "event_005",
+      "tenantId": "tenant_andespack",
+      "actorType": "user",
+      "actorId": "user_laura",
+      "actorName": "Laura Quiroga",
+      "action": "aprobó",
+      "entityType": "result",
+      "entityId": "result_weekly_summary",
+      "summary": "Aprobó el resumen ejecutivo semanal.",
+      "createdAt": "2026-09-18T09:15:00-03:00",
+      "previousState": "En revisión",
+      "nextState": "Aprobado"
+    },
+    {
+      "id": "event_006",
+      "tenantId": "tenant_andespack",
+      "actorType": "user",
+      "actorId": "user_sofia",
+      "actorName": "Sofía Pérez",
+      "action": "abrió",
+      "entityType": "result",
+      "entityId": "result_reactivate_customers",
+      "summary": "Comenzó la revisión de la oportunidad comercial.",
+      "createdAt": "2026-09-18T09:50:00-03:00",
+      "previousState": "Nuevo",
+      "nextState": "En revisión"
+    },
+    {
+      "id": "event_007",
+      "tenantId": "tenant_andespack",
+      "actorType": "system",
+      "actorName": "Sistema",
+      "action": "marcó para revisión",
+      "entityType": "document",
+      "entityId": "doc_product_spec_wine6",
+      "summary": "La ficha técnica se aproxima al umbral de vigencia definido.",
+      "createdAt": "2026-09-18T08:05:00-03:00"
+    },
+    {
+      "id": "event_008",
+      "tenantId": "tenant_andespack",
+      "actorType": "system",
+      "actorName": "Sistema",
+      "action": "generó",
+      "entityType": "result",
+      "entityId": "result_delivery_risk",
+      "summary": "Generó una alerta por dos entregas con demora probable.",
+      "createdAt": "2026-09-18T08:10:00-03:00"
+    }
+  ],
+  "metrics": {
+    "current": {
+      "tenantId": "tenant_andespack",
+      "period": "2026-09-18",
+      "knowledgeCoverage": 0.87,
+      "averageConfidence": 0.84,
+      "newResults": 7,
+      "pendingApprovals": 3,
+      "sourcesToReview": 4,
+      "potentialStockoutsAnticipated": 2,
+      "estimatedHoursSavedMonthly": 37,
+      "onTimeDelivery": 0.86,
+      "onTimeDeliveryBaseline": 0.78,
+      "quotePreparationHours": 1.4,
+      "quotePreparationBaselineHours": 5.2,
+      "estimatedOpportunitiesEquivalentUsd": 48600
+    },
+    "trend": [
+      {
+        "tenantId": "tenant_andespack",
+        "period": "2026-W34",
+        "knowledgeCoverage": 0.62,
+        "averageConfidence": 0.71,
+        "decisionsSupported": 2,
+        "approvalsOnTime": 0.67,
+        "staleSources": 9,
+        "estimatedHoursSaved": 12
+      },
+      {
+        "tenantId": "tenant_andespack",
+        "period": "2026-W35",
+        "knowledgeCoverage": 0.69,
+        "averageConfidence": 0.75,
+        "decisionsSupported": 4,
+        "approvalsOnTime": 0.71,
+        "staleSources": 8,
+        "estimatedHoursSaved": 18
+      },
+      {
+        "tenantId": "tenant_andespack",
+        "period": "2026-W36",
+        "knowledgeCoverage": 0.76,
+        "averageConfidence": 0.78,
+        "decisionsSupported": 6,
+        "approvalsOnTime": 0.76,
+        "staleSources": 6,
+        "estimatedHoursSaved": 24
+      },
+      {
+        "tenantId": "tenant_andespack",
+        "period": "2026-W37",
+        "knowledgeCoverage": 0.82,
+        "averageConfidence": 0.81,
+        "decisionsSupported": 8,
+        "approvalsOnTime": 0.78,
+        "staleSources": 5,
+        "estimatedHoursSaved": 31
+      },
+      {
+        "tenantId": "tenant_andespack",
+        "period": "2026-W38",
+        "knowledgeCoverage": 0.87,
+        "averageConfidence": 0.84,
+        "decisionsSupported": 9,
+        "approvalsOnTime": 0.8,
+        "staleSources": 4,
+        "estimatedHoursSaved": 37
+      }
+    ]
+  },
+  "settings": {
+    "tenantId": "tenant_andespack",
+    "locale": "es-AR",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "dateFormat": "dd/MM/yyyy",
+    "currencyLabel": "USD equivalentes",
+    "notifications": {
+      "criticalAlerts": true,
+      "dailyDigest": true,
+      "approvalReminders": true
+    },
+    "approvalPolicies": [
+      {
+        "id": "policy_purchases",
+        "label": "Compras extraordinarias",
+        "condition": "Toda recomendación de compra fuera del plan requiere aprobación de Operaciones.",
+        "approverRole": "owner"
+      },
+      {
+        "id": "policy_discounts",
+        "label": "Política de descuentos",
+        "condition": "Los cambios de política requieren aprobación de Administración.",
+        "approverRole": "admin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+---
+description: Reglas permanentes del proyecto Gemelo Digital Operativo v2 Demo
+alwaysApply: true
+---
+
+# Reglas del proyecto
+
+## Producto
+
+- La aplicación visible pertenece a Makers y se presenta como Gemelo Digital Operativo.
+- La demo usa únicamente datos sintéticos de AndesPack Industrial S.A., empresa ficticia.
+- Mostrar `Demo · Datos simulados` en todas las vistas.
+- Explicar resultados mediante evidencias, confianza, vigencia y relaciones.
+- Incluir la sección Proceso (arranque con el cliente → ritmo semanal) además de las vistas operativas.
+- Segmentar por rubros con filtro global; Gemelo por áreas mínimas pyme (semáforo); Consultor mock; Novedades sectoriales.
+- Mantener control humano en toda acción sensible.
+
+## Caja negra
+
+- Prohibido mostrar o incluir en contenido público nombres de motores, proveedores, modelos, agentes o herramientas de desarrollo.
+- Usar `sistema`, `motor operativo`, `resultado`, `evidencia`, `conocimiento` y `automatización`.
+- Nunca exponer prompts, razonamiento interno, sesiones, tokens o infraestructura.
+
+## Arquitectura
+
+- React + TypeScript + Vite.
+- Datos centralizados detrás de interfaces de repositorio.
+- Implementación inicial `MockRepository` con JSON validado.
+- Estado demo persistido en `localStorage` con versión de esquema.
+- Ninguna credencial dentro de variables `VITE_*`.
+- No realizar llamadas reales de red en la demo.
+
+## Calidad
+
+- TypeScript estricto.
+- Componentes accesibles y navegables por teclado.
+- Evitar `any` salvo justificación documentada.
+- Cero errores visibles en consola durante el recorrido principal.
+- Los números deben coincidir entre módulos.
+- Las acciones de aprobación deben actualizar resultado, aprobación, actividad y métricas desde una única transición de estado.
+
+## Alcance
+
+- No crear repositorio remoto.
+- No configurar Hostinger.
+- No implementar backend, base de datos o autenticación real.
+- No agregar funciones fuera de los documentos sin registrar la decisión.
+

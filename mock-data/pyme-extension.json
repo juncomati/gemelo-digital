@@ -1,0 +1,606 @@
+{
+  "businessAreas": [
+    {
+      "id": "area_direccion",
+      "tenantId": "tenant_andespack",
+      "name": "Dirección",
+      "description": "Prioridades, decisiones y seguimiento ejecutivo.",
+      "health": "healthy",
+      "ownerId": "user_laura",
+      "rubroIds": ["institucional"],
+      "objectivesMet": ["Resumen semanal activo", "Prioridades visibles en Inicio"],
+      "objectivesGap": [],
+      "documentIds": ["doc_weekly_summary"],
+      "taskIds": ["task_dir_01"],
+      "improvementIds": ["imp_dir_01"],
+      "relatedEntityIds": ["entity_risk_liner"],
+      "position": { "x": 50, "y": 12 }
+    },
+    {
+      "id": "area_comercial",
+      "tenantId": "tenant_andespack",
+      "name": "Comercial",
+      "description": "Demanda, clientes, cotizaciones y reactivación.",
+      "health": "healthy",
+      "ownerId": "user_sofia",
+      "rubroIds": ["comercial"],
+      "objectivesMet": ["Pronóstico Q4 actualizado", "Lista de clientes inactivos"],
+      "objectivesGap": ["Campañas de reactivación aún en revisión"],
+      "documentIds": ["doc_forecast_q4", "doc_open_orders", "doc_inactive_customers", "doc_quote_times"],
+      "taskIds": ["task_com_01", "task_com_02"],
+      "improvementIds": ["imp_com_01"],
+      "relatedEntityIds": ["entity_demand_growth", "entity_reactivation_opportunity", "entity_quote_time"],
+      "position": { "x": 78, "y": 28 }
+    },
+    {
+      "id": "area_operaciones",
+      "tenantId": "tenant_andespack",
+      "name": "Operaciones",
+      "description": "Producción, inventario y continuidad de línea.",
+      "health": "weak",
+      "ownerId": "user_martin",
+      "rubroIds": ["operaciones"],
+      "objectivesMet": ["Inventario diario sincronizado", "Plan de entregas visible"],
+      "objectivesGap": ["Cobertura de liner menor al plazo de reposición"],
+      "documentIds": ["doc_inventory", "doc_delivery_plan", "doc_line_changeovers"],
+      "taskIds": ["task_ops_01", "task_ops_02"],
+      "improvementIds": ["imp_ops_01"],
+      "relatedEntityIds": ["entity_product_wine6", "entity_liner", "entity_risk_liner", "entity_line2"],
+      "position": { "x": 50, "y": 42 }
+    },
+    {
+      "id": "area_compras",
+      "tenantId": "tenant_andespack",
+      "name": "Compras",
+      "description": "Proveedores, plazos y órdenes de abastecimiento.",
+      "health": "weak",
+      "ownerId": "user_martin",
+      "rubroIds": ["operaciones"],
+      "objectivesMet": ["Plazos de proveedor documentados"],
+      "objectivesGap": ["Capacidad extraordinaria de Papeles Cuyo sin validar"],
+      "documentIds": ["doc_supplier_lead_times"],
+      "taskIds": ["task_compras_01"],
+      "improvementIds": [],
+      "relatedEntityIds": ["entity_supplier_papeles", "entity_supplier_lead_time"],
+      "position": { "x": 22, "y": 42 }
+    },
+    {
+      "id": "area_finanzas",
+      "tenantId": "tenant_andespack",
+      "name": "Finanzas",
+      "description": "Costos, flujo y control presupuestario.",
+      "health": "missing",
+      "ownerId": "user_valentina",
+      "rubroIds": ["finanzas"],
+      "objectivesMet": [],
+      "objectivesGap": ["Sin tablero de costos por producto", "Sin proyección de caja vinculada a compras"],
+      "documentIds": [],
+      "taskIds": ["task_fin_01"],
+      "improvementIds": [],
+      "relatedEntityIds": [],
+      "position": { "x": 18, "y": 68 }
+    },
+    {
+      "id": "area_personas",
+      "tenantId": "tenant_andespack",
+      "name": "Personas",
+      "description": "Roles, cobertura de turnos y responsables.",
+      "health": "weak",
+      "ownerId": "user_valentina",
+      "rubroIds": ["personas"],
+      "objectivesMet": ["Roles visibles en la demo"],
+      "objectivesGap": ["Sin matriz de suplencias formal"],
+      "documentIds": [],
+      "taskIds": ["task_per_01"],
+      "improvementIds": [],
+      "relatedEntityIds": [],
+      "position": { "x": 82, "y": 68 }
+    },
+    {
+      "id": "area_calidad",
+      "tenantId": "tenant_andespack",
+      "name": "Calidad",
+      "description": "Fichas técnicas, vigencia y no conformidades.",
+      "health": "weak",
+      "ownerId": "user_valentina",
+      "rubroIds": ["calidad"],
+      "objectivesMet": ["Fichas indexadas en Documentación"],
+      "objectivesGap": ["Tres fichas próximas a vencer"],
+      "documentIds": ["doc_product_spec_wine6"],
+      "taskIds": ["task_cal_01"],
+      "improvementIds": [],
+      "relatedEntityIds": ["entity_product_wine6"],
+      "position": { "x": 68, "y": 58 }
+    },
+    {
+      "id": "area_logistica",
+      "tenantId": "tenant_andespack",
+      "name": "Logística",
+      "description": "Entregas, ventanas y riesgo de demora.",
+      "health": "weak",
+      "ownerId": "user_martin",
+      "rubroIds": ["operaciones"],
+      "objectivesMet": ["Plan semanal de entregas"],
+      "objectivesGap": ["Dos entregas con demora probable"],
+      "documentIds": ["doc_delivery_plan"],
+      "taskIds": ["task_log_01"],
+      "improvementIds": [],
+      "relatedEntityIds": ["entity_delivery_risk"],
+      "position": { "x": 35, "y": 72 }
+    },
+    {
+      "id": "area_clientes",
+      "tenantId": "tenant_andespack",
+      "name": "Clientes",
+      "description": "Relación postventa y reactivación de cuentas.",
+      "health": "healthy",
+      "ownerId": "user_sofia",
+      "rubroIds": ["comercial"],
+      "objectivesMet": ["Segmento de inactivos identificado"],
+      "objectivesGap": [],
+      "documentIds": ["doc_inactive_customers"],
+      "taskIds": ["task_cli_01"],
+      "improvementIds": ["imp_cli_01"],
+      "relatedEntityIds": ["entity_reactivation_opportunity"],
+      "position": { "x": 88, "y": 48 }
+    },
+    {
+      "id": "area_cumplimiento",
+      "tenantId": "tenant_andespack",
+      "name": "Cumplimiento",
+      "description": "Políticas, umbrales y consistencia institucional.",
+      "health": "missing",
+      "ownerId": "user_valentina",
+      "rubroIds": ["institucional", "comercial"],
+      "objectivesMet": [],
+      "objectivesGap": ["Dos versiones de política de descuentos", "Sin dueño único de política vigente"],
+      "documentIds": ["doc_discount_policy_a", "doc_discount_policy_b"],
+      "taskIds": ["task_cum_01"],
+      "improvementIds": [],
+      "relatedEntityIds": ["entity_discount_policy"],
+      "position": { "x": 12, "y": 28 }
+    },
+    {
+      "id": "area_datos",
+      "tenantId": "tenant_andespack",
+      "name": "Datos y fuentes",
+      "description": "Conexión, vigencia y calidad de fuentes simuladas.",
+      "health": "weak",
+      "ownerId": "user_valentina",
+      "rubroIds": ["institucional"],
+      "objectivesMet": ["ERP, CRM y Drive conectados"],
+      "objectivesGap": ["Correo corporativo requiere revisión"],
+      "documentIds": [],
+      "taskIds": ["task_dat_01"],
+      "improvementIds": ["imp_dat_01"],
+      "relatedEntityIds": [],
+      "position": { "x": 50, "y": 88 }
+    },
+    {
+      "id": "area_mantenimiento",
+      "tenantId": "tenant_andespack",
+      "name": "Mantenimiento",
+      "description": "Disponibilidad de líneas y tiempos de cambio.",
+      "health": "missing",
+      "ownerId": "user_martin",
+      "rubroIds": ["operaciones"],
+      "objectivesMet": [],
+      "objectivesGap": ["Tiempos de cambio de formato sin medición controlada"],
+      "documentIds": ["doc_line_changeovers"],
+      "taskIds": ["task_man_01"],
+      "improvementIds": [],
+      "relatedEntityIds": ["entity_line2"],
+      "position": { "x": 65, "y": 78 }
+    }
+  ],
+  "areaTasks": [
+    {
+      "id": "task_dir_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_direccion",
+      "title": "Revisar prioridades de la semana",
+      "status": "done",
+      "dueAt": "2026-09-18T12:00:00-03:00",
+      "ownerId": "user_laura"
+    },
+    {
+      "id": "task_com_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_comercial",
+      "title": "Preparar campaña de 14 clientes inactivos",
+      "status": "in_progress",
+      "dueAt": "2026-09-20T18:00:00-03:00",
+      "ownerId": "user_sofia"
+    },
+    {
+      "id": "task_com_02",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_comercial",
+      "title": "Actualizar supuestos del pronóstico Q4",
+      "status": "open",
+      "dueAt": "2026-09-22T18:00:00-03:00",
+      "ownerId": "user_sofia"
+    },
+    {
+      "id": "task_ops_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_operaciones",
+      "title": "Confirmar ventana de quiebre de liner",
+      "status": "in_progress",
+      "dueAt": "2026-09-18T17:00:00-03:00",
+      "ownerId": "user_martin"
+    },
+    {
+      "id": "task_ops_02",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_operaciones",
+      "title": "Ajustar secuencia de formatos Línea 2",
+      "status": "open",
+      "dueAt": "2026-09-25T17:00:00-03:00",
+      "ownerId": "user_martin"
+    },
+    {
+      "id": "task_compras_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_compras",
+      "title": "Validar capacidad extraordinaria con Papeles Cuyo",
+      "status": "open",
+      "dueAt": "2026-09-19T12:00:00-03:00",
+      "ownerId": "user_martin"
+    },
+    {
+      "id": "task_fin_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_finanzas",
+      "title": "Definir tablero mínimo de costos por SKU",
+      "status": "open",
+      "dueAt": "2026-09-30T18:00:00-03:00",
+      "ownerId": "user_valentina"
+    },
+    {
+      "id": "task_per_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_personas",
+      "title": "Documentar suplencias de Operaciones y Comercial",
+      "status": "open",
+      "dueAt": "2026-09-28T18:00:00-03:00",
+      "ownerId": "user_valentina"
+    },
+    {
+      "id": "task_cal_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_calidad",
+      "title": "Renovar tres fichas técnicas próximas a vencer",
+      "status": "open",
+      "dueAt": "2026-10-05T18:00:00-03:00",
+      "ownerId": "user_valentina"
+    },
+    {
+      "id": "task_log_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_logistica",
+      "title": "Reprogramar dos entregas en riesgo",
+      "status": "in_progress",
+      "dueAt": "2026-09-19T10:00:00-03:00",
+      "ownerId": "user_martin"
+    },
+    {
+      "id": "task_cli_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_clientes",
+      "title": "Asignar dueños de cuenta a clientes inactivos",
+      "status": "done",
+      "dueAt": "2026-09-17T18:00:00-03:00",
+      "ownerId": "user_sofia"
+    },
+    {
+      "id": "task_cum_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_cumplimiento",
+      "title": "Unificar política de descuentos vigente",
+      "status": "open",
+      "dueAt": "2026-09-20T17:00:00-03:00",
+      "ownerId": "user_valentina"
+    },
+    {
+      "id": "task_dat_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_datos",
+      "title": "Revisar sincronización del correo corporativo",
+      "status": "open",
+      "dueAt": "2026-09-21T12:00:00-03:00",
+      "ownerId": "user_valentina"
+    },
+    {
+      "id": "task_man_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_mantenimiento",
+      "title": "Medir tiempo real de cambio de formato",
+      "status": "open",
+      "dueAt": "2026-09-27T18:00:00-03:00",
+      "ownerId": "user_martin"
+    }
+  ],
+  "areaImprovements": [
+    {
+      "id": "imp_dir_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_direccion",
+      "text": "Se adoptó el resumen ejecutivo semanal como ritual de prioridad.",
+      "at": "2026-09-11T10:00:00-03:00"
+    },
+    {
+      "id": "imp_com_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_comercial",
+      "text": "El tiempo simulado de cotización bajó de 5,2 h a 1,4 h.",
+      "at": "2026-09-10T16:00:00-03:00"
+    },
+    {
+      "id": "imp_ops_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_operaciones",
+      "text": "Se vinculó inventario ERP con el pronóstico comercial para anticipar quiebres.",
+      "at": "2026-09-15T09:00:00-03:00"
+    },
+    {
+      "id": "imp_cli_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_clientes",
+      "text": "Se etiquetó el segmento de 14 clientes reactivables.",
+      "at": "2026-09-12T14:00:00-03:00"
+    },
+    {
+      "id": "imp_dat_01",
+      "tenantId": "tenant_andespack",
+      "areaId": "area_datos",
+      "text": "Se conectaron ERP, CRM y Drive en modo simulado.",
+      "at": "2026-09-01T11:00:00-03:00"
+    }
+  ],
+  "pains": [
+    {
+      "id": "pain_liner",
+      "tenantId": "tenant_andespack",
+      "title": "Riesgo de quiebre de papel liner",
+      "summary": "La cobertura estimada es menor que el plazo habitual de reposición.",
+      "severity": "critical",
+      "rubroIds": ["operaciones"],
+      "evidence": "Stock 9 días vs plazo 12 días; demanda +21%.",
+      "actionIds": ["action_buy_liner", "action_validate_supplier"]
+    },
+    {
+      "id": "pain_discounts",
+      "tenantId": "tenant_andespack",
+      "title": "Política de descuentos inconsistente",
+      "summary": "Dos versiones vigentes con umbrales distintos.",
+      "severity": "medium",
+      "rubroIds": ["comercial", "institucional"],
+      "evidence": "Versión Comercial 12% vs Administración 8%.",
+      "actionIds": ["action_unify_policy"]
+    },
+    {
+      "id": "pain_finance_gap",
+      "tenantId": "tenant_andespack",
+      "title": "Vacío de información financiera",
+      "summary": "No hay tablero mínimo de costos ni proyección de caja ligada a compras.",
+      "severity": "high",
+      "rubroIds": ["finanzas"],
+      "evidence": "Área Finanzas en estado faltante en el Gemelo.",
+      "actionIds": ["action_finance_board"]
+    },
+    {
+      "id": "pain_deliveries",
+      "tenantId": "tenant_andespack",
+      "title": "Entregas con demora probable",
+      "summary": "Dos compromisos superan el umbral operativo.",
+      "severity": "high",
+      "rubroIds": ["operaciones"],
+      "evidence": "Plan semanal de entregas.",
+      "actionIds": ["action_reschedule"]
+    },
+    {
+      "id": "pain_reactivation",
+      "tenantId": "tenant_andespack",
+      "title": "Clientes inactivos sin campaña",
+      "summary": "Hay oportunidad estimada sin plan comercial cerrado.",
+      "severity": "medium",
+      "rubroIds": ["comercial"],
+      "evidence": "14 clientes sin compra en 120 días.",
+      "actionIds": ["action_campaign"]
+    }
+  ],
+  "actions": [
+    {
+      "id": "action_buy_liner",
+      "tenantId": "tenant_andespack",
+      "painId": "pain_liner",
+      "title": "Adelantar compra de 18 t de liner",
+      "summary": "Aprobación pendiente en Operaciones.",
+      "areaId": "area_compras",
+      "status": "in_progress",
+      "estimatedImpact": "USD 18.400 equivalentes protegidos, estimado",
+      "resultId": "result_risk_liner"
+    },
+    {
+      "id": "action_validate_supplier",
+      "tenantId": "tenant_andespack",
+      "painId": "pain_liner",
+      "title": "Validar capacidad extraordinaria del proveedor",
+      "summary": "Cerrar objetivo de conocimiento de Compras.",
+      "areaId": "area_compras",
+      "status": "planned",
+      "estimatedImpact": "Reduce incertidumbre de plazo"
+    },
+    {
+      "id": "action_unify_policy",
+      "tenantId": "tenant_andespack",
+      "painId": "pain_discounts",
+      "title": "Definir versión única de descuentos",
+      "summary": "Aprobación asignada a Administración.",
+      "areaId": "area_cumplimiento",
+      "status": "planned",
+      "estimatedImpact": "Consistencia comercial",
+      "resultId": "result_discount_inconsistency"
+    },
+    {
+      "id": "action_finance_board",
+      "tenantId": "tenant_andespack",
+      "painId": "pain_finance_gap",
+      "title": "Armar tablero mínimo de Finanzas",
+      "summary": "Costos por SKU y vínculo a compras extraordinarias.",
+      "areaId": "area_finanzas",
+      "status": "planned",
+      "estimatedImpact": "Cierra área faltante crítica"
+    },
+    {
+      "id": "action_reschedule",
+      "tenantId": "tenant_andespack",
+      "painId": "pain_deliveries",
+      "title": "Reprogramar entregas en riesgo",
+      "summary": "Coordinar Operaciones y Comercial.",
+      "areaId": "area_logistica",
+      "status": "in_progress",
+      "estimatedImpact": "Protege compromisos de la semana",
+      "resultId": "result_delivery_risk"
+    },
+    {
+      "id": "action_campaign",
+      "tenantId": "tenant_andespack",
+      "painId": "pain_reactivation",
+      "title": "Lanzar campaña de reactivación",
+      "summary": "Revisión comercial de 14 cuentas.",
+      "areaId": "area_clientes",
+      "status": "in_progress",
+      "estimatedImpact": "USD 32.000 equivalentes de oportunidad estimada",
+      "resultId": "result_reactivate_customers"
+    }
+  ],
+  "newsItems": [
+    {
+      "id": "news_fuel",
+      "tenantId": "tenant_andespack",
+      "title": "Ajuste de referencia de combustibles en Cuyo",
+      "type": "mercado",
+      "publishedAt": "2026-09-17T09:00:00-03:00",
+      "summary": "Suba estimada de costos logísticos para entregas regionales.",
+      "detail": "Noticia simulada: operadores regionales reportan incremento de referencia que puede afectar ventanas de entrega y costos de flete para embalajes.",
+      "rubroIds": ["operaciones", "finanzas"],
+      "severity": "medium",
+      "sourceLabel": "Boletín sectorial simulado"
+    },
+    {
+      "id": "news_labeling",
+      "tenantId": "tenant_andespack",
+      "title": "Proyecto de actualización de rotulado de envases",
+      "type": "decreto",
+      "publishedAt": "2026-09-15T11:30:00-03:00",
+      "summary": "Posible requisito adicional de información en embalajes alimentarios.",
+      "detail": "Simulación: un borrador de decreto propone ampliar datos obligatorios en envases secundarios. Impacta fichas técnicas y calidad.",
+      "rubroIds": ["calidad", "institucional"],
+      "severity": "high",
+      "sourceLabel": "Resumen normativo simulado"
+    },
+    {
+      "id": "news_wine_demand",
+      "tenantId": "tenant_andespack",
+      "title": "Expectativa de vendimia anticipada en San Juan",
+      "type": "mercado",
+      "publishedAt": "2026-09-16T08:00:00-03:00",
+      "summary": "Bodegas podrían adelantar pedidos de cajas reforzadas.",
+      "detail": "Simulación comercial: analistas locales estiman adelanto de compras de packaging ante una ventana climática favorable.",
+      "rubroIds": ["comercial", "operaciones"],
+      "severity": "high",
+      "sourceLabel": "Radar agroindustrial simulado"
+    },
+    {
+      "id": "news_labor",
+      "tenantId": "tenant_andespack",
+      "title": "Pauta salarial orientativa para industria manufacturera",
+      "type": "ley",
+      "publishedAt": "2026-09-10T16:00:00-03:00",
+      "summary": "Referencia salarial que puede impactar costos de personal de planta.",
+      "detail": "Simulación: se publica una pauta orientativa. No es de cumplimiento automático en la demo, pero alerta al área Personas y Finanzas.",
+      "rubroIds": ["personas", "finanzas"],
+      "severity": "low",
+      "sourceLabel": "Resumen laboral simulado"
+    },
+    {
+      "id": "news_credit",
+      "tenantId": "tenant_andespack",
+      "title": "Línea de crédito pyme para capital de trabajo",
+      "type": "mercado",
+      "publishedAt": "2026-09-12T13:00:00-03:00",
+      "summary": "Instrumento simulado útil ante compras extraordinarias de materia prima.",
+      "detail": "Simulación financiera: bancos regionales destacan líneas para stock crítico. Relacionable con la compra anticipada de liner.",
+      "rubroIds": ["finanzas", "operaciones"],
+      "severity": "medium",
+      "sourceLabel": "Alertas pyme simuladas"
+    }
+  ],
+  "consultorReplies": [
+    {
+      "id": "reply_liner",
+      "keywords": ["liner", "quiebre", "papel", "stock", "compra"],
+      "answer": "El caso principal es el riesgo de quiebre de papel liner: cobertura estimada de 9 días frente a un plazo habitual de 12, con demanda de Caja Vino x6 Reforzada en +21%. Hay una aprobación pendiente para adelantar 18 toneladas. No se ejecuta ninguna compra real en la demo.",
+      "linkHints": [
+        { "label": "Ver resultado", "to": "/resultados/result_risk_liner" },
+        { "label": "Abrir aprobación", "to": "/aprobaciones/approval_purchase_liner" },
+        { "label": "Área Operaciones", "to": "/gemelo?area=area_operaciones" }
+      ]
+    },
+    {
+      "id": "reply_finanzas",
+      "keywords": ["finanzas", "costo", "caja", "presupuesto", "financ"],
+      "answer": "Finanzas aparece como área faltante en el Gemelo: hay poco conocimiento cargado frente a Comercial u Operaciones. La acción sugerida es armar un tablero mínimo de costos por SKU y vincularlo a compras extraordinarias.",
+      "linkHints": [
+        { "label": "Área Finanzas", "to": "/gemelo?area=area_finanzas" },
+        { "label": "Dolor financiero", "to": "/proceso#dolores" },
+        { "label": "Filtrar rubro Finanzas", "to": "/inicio" }
+      ]
+    },
+    {
+      "id": "reply_descuentos",
+      "keywords": ["descuento", "política", "inconsist"],
+      "answer": "Hay dos versiones de la política de descuentos 2025 con umbrales distintos (12% vs 8%). El área Cumplimiento está en rojo hasta unificar la versión vigente.",
+      "linkHints": [
+        { "label": "Documentos de descuentos", "to": "/documentacion?q=descuentos" },
+        { "label": "Resultado", "to": "/resultados/result_discount_inconsistency" }
+      ]
+    },
+    {
+      "id": "reply_semana",
+      "keywords": ["semana", "ritual", "proceso", "cómo"],
+      "answer": "El ritmo semanal propuesto es: priorizar en Inicio, decidir con evidencia y aprobación, registrar en Actividad, revisar Métricas y ajustar fuentes u objetivos abiertos. También conviene revisar Novedades del sector.",
+      "linkHints": [
+        { "label": "Proceso semanal", "to": "/proceso#semana" },
+        { "label": "Novedades", "to": "/novedades" }
+      ]
+    },
+    {
+      "id": "reply_solidez",
+      "keywords": ["sólid", "pyme", "áreas", "gemelo", "faltante"],
+      "answer": "La regla de solidez de esta demo: la pyme se considera sólida si no hay áreas faltantes y como máximo dos áreas en estado débil. Hoy Finanzas, Cumplimiento y Mantenimiento están en rojo; Operaciones y otras están en ámbar.",
+      "linkHints": [
+        { "label": "Abrir Gemelo", "to": "/gemelo" },
+        { "label": "Métricas de solidez", "to": "/metricas" }
+      ]
+    },
+    {
+      "id": "reply_novedades",
+      "keywords": ["noticia", "ley", "decreto", "mercado", "vendimia"],
+      "answer": "En Novedades hay alertas simuladas: expectativa de vendimia anticipada (demanda de cajas), proyecto de rotulado de envases y costos logísticos en Cuyo. Filtrá por rubro para ver el impacto.",
+      "linkHints": [{ "label": "Ver novedades", "to": "/novedades" }]
+    },
+    {
+      "id": "reply_default",
+      "keywords": ["*"],
+      "answer": "Puedo orientar sobre el conocimiento simulado de AndesPack: riesgo de liner, áreas del Gemelo, dolores y acciones, métricas o novedades del sector. Probá preguntar por quiebre, finanzas, descuentos o solidez de la pyme.",
+      "linkHints": [
+        { "label": "Inicio", "to": "/inicio" },
+        { "label": "Proceso", "to": "/proceso" },
+        { "label": "Gemelo", "to": "/gemelo" }
+      ]
+    }
+  ]
+}
