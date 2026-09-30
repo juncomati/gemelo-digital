@@ -165,7 +165,7 @@ function PainsAndActions() {
         <Card variant="panel" className="p-5 md:p-6">
           <h3 className="font-display text-2xl font-semibold">Red de acciones</h3>
           <p className="mt-2 text-sm text-text-600">
-            Del dolor a la acción y al área del Gemelo responsable de ejecutarla.
+            Del dolor a la acción y al área de CAUCE responsable de ejecutarla.
           </p>
         </Card>
         <Card className="overflow-hidden p-0">

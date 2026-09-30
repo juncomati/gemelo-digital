@@ -19,7 +19,7 @@ Acciones: `Ver resumen semanal` (lleva a `/proceso#semana`), `Explorar resultado
 
 ### Resumen del proceso
 
-Bloque compacto con las cinco etapas (Arranque, Fuentes, Gemelo, Decisiones, Semana) y enlace `Ver proceso completo` a `/proceso`.
+Bloque compacto con las cinco etapas (Arranque, Fuentes, CAUCE, Decisiones, Semana) y enlace `Ver proceso completo` a `/proceso`.
 
 ### Indicadores
 
@@ -47,7 +47,7 @@ Bloque compacto con las cinco etapas (Arranque, Fuentes, Gemelo, Decisiones, Sem
 1. **Requiere tu atención:** tres situaciones con severidad, impacto, vencimiento y responsable.
 2. **Pulso operativo:** producción, entregas en fecha, cobertura de inventario y cotizaciones pendientes.
 3. **Últimos resultados:** cuatro resultados con tipo, área, fecha y estado.
-4. **Estado del Gemelo:** cobertura por área, fuentes desactualizadas y objetivos pendientes.
+4. **Estado de CAUCE:** cobertura por área, fuentes desactualizadas y objetivos pendientes.
 5. **Actividad reciente:** cinco eventos con enlace al detalle.
 
 ### Interacciones
@@ -74,7 +74,7 @@ Explicar el arco de CAUCE desde el arranque con el cliente hasta el ritmo semana
 
 1. Arranque con el cliente (`#arranque`)
 2. Fuentes y conocimiento (`#fuentes`)
-3. Gemelo vivo (`#gemelo`)
+3. CAUCE (`#gemelo`)
 4. Resultados y control humano (`#decisiones`)
 5. Semana a semana (`#semana`) — incluye ritual semanal
 
@@ -90,7 +90,7 @@ Cada etapa tiene CTA a la pantalla operativa correspondiente y etiqueta de estad
 
 ### Objetivo
 
-Mostrar qué información está disponible, su calidad, vigencia y contribución al Gemelo.
+Mostrar qué información está disponible, su calidad, vigencia y contribución a CAUCE.
 
 ### Resumen
 
@@ -165,10 +165,10 @@ Registros importantes:
 
 - Buscar `descuentos` encuentra las versiones contradictorias.
 - El usuario diferencia `procesado` de `actualizado`.
-- Cada documento muestra relación con el Gemelo.
+- Cada documento muestra relación con CAUCE.
 - Los filtros pueden limpiarse con una sola acción.
 
-## 3. Gemelo
+## 3. CAUCE
 
 ### Objetivo
 
@@ -516,7 +516,7 @@ Cada fila muestra la etiqueta `Simulación`.
 
 Lecturas adicionales sobre el caso simulado de papel liner. No reemplazan el semáforo de áreas, el ciclo con el cliente, el listado de resultados ni la bandeja de aprobaciones.
 
-### Gemelo
+### CAUCE
 
 Grafo dirigido con Operaciones, Compras, Finanzas, Calidad, Personas y el quiebre de liner. Cada flecha es `evidencia`, `depende de` o `hueco`. Al seleccionar el quiebre se ilumina un solo camino: Calidad (spec de liner) → Compras (plazo) → Operaciones (colas) → Finanzas (caja) → Personas (turno extra).
 

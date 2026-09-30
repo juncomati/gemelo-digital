@@ -51,7 +51,7 @@ Copiar este texto en Cursor:
 1. Base técnica, navegación y tokens visuales.
 2. Datos canónicos y estado local.
 3. Circuito Inicio → Resultado → Aprobación → Actividad.
-4. Documentación y Gemelo.
+4. Documentación y CAUCE.
 5. Métricas y Configuración.
 6. Estados alternativos, accesibilidad y responsive.
 7. Revisión comercial completa.

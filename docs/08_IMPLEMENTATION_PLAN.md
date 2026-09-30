@@ -53,7 +53,7 @@ Modificar un registro, recargar y restablecer el estado.
 
 Recorrido Inicio → Resultado → Aprobación → Actividad, con propagación de estado.
 
-## Hito 4 — Documentación y Gemelo
+## Hito 4 — Documentación y CAUCE
 
 ### Alcance
 
@@ -126,7 +126,7 @@ Este hito requiere aprobación expresa.
 4. Aprobaciones.
 5. Actividad.
 6. Documentación.
-7. Gemelo.
+7. CAUCE.
 8. Métricas.
 9. Configuración.
 

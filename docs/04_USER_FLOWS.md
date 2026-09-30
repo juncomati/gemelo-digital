@@ -32,7 +32,7 @@ Comunicar el valor central en menos de cinco minutos.
 2. Buscar `Pronóstico comercial Q4`.
 3. Abrir el detalle.
 4. Revisar hechos extraídos y entidades relacionadas.
-5. Abrir `Caja Vino x6 Reforzada` en Gemelo.
+5. Abrir `Caja Vino x6 Reforzada` en CAUCE.
 6. Explorar el vínculo con stock, proveedor y riesgo.
 7. Abrir el resultado relacionado.
 

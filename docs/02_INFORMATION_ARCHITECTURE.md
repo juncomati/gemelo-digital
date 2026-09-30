@@ -7,7 +7,7 @@ La barra lateral es persistente y contiene:
 1. Inicio
 2. Proceso
 3. Documentación
-4. Gemelo
+4. CAUCE
 5. Resultados
 6. Aprobaciones
 7. Actividad

@@ -138,7 +138,7 @@ export function MetricsPage() {
         </Card>
 
         <Card className="p-5">
-          <h3 className="section-title">Salud de áreas del Gemelo</h3>
+          <h3 className="section-title">Salud de áreas de CAUCE</h3>
           <p className="mt-1 text-sm text-text-600">Distribución verde / ámbar / rojo.</p>
           <HealthPieChart data={healthPie} ariaLabel="Salud de áreas" />
           <ul className="mt-2 flex flex-wrap gap-3 text-sm text-text-700">

@@ -386,7 +386,7 @@
       "summary": "No hay tablero mínimo de costos ni proyección de caja ligada a compras.",
       "severity": "high",
       "rubroIds": ["finanzas"],
-      "evidence": "Área Finanzas en estado faltante en el Gemelo.",
+      "evidence": "Área Finanzas en estado faltante en CAUCE.",
       "actionIds": ["action_finance_board"]
     },
     {
@@ -552,7 +552,7 @@
     {
       "id": "reply_finanzas",
       "keywords": ["finanzas", "costo", "caja", "presupuesto", "financ"],
-      "answer": "Finanzas aparece como área faltante en el Gemelo: hay poco conocimiento cargado frente a Comercial u Operaciones. La acción sugerida es armar un tablero mínimo de costos por SKU y vincularlo a compras extraordinarias.",
+      "answer": "Finanzas aparece como área faltante en CAUCE: hay poco conocimiento cargado frente a Comercial u Operaciones. La acción sugerida es armar un tablero mínimo de costos por SKU y vincularlo a compras extraordinarias.",
       "linkHints": [
         { "label": "Área Finanzas", "to": "/gemelo?area=area_finanzas" },
         { "label": "Dolor financiero", "to": "/proceso#dolores" },
@@ -582,7 +582,7 @@
       "keywords": ["sólid", "pyme", "áreas", "gemelo", "faltante"],
       "answer": "La regla de solidez de esta demo: la pyme se considera sólida si no hay áreas faltantes y como máximo dos áreas en estado débil. Hoy Finanzas, Cumplimiento y Mantenimiento están en rojo; Operaciones y otras están en ámbar.",
       "linkHints": [
-        { "label": "Abrir Gemelo", "to": "/gemelo" },
+        { "label": "Abrir CAUCE", "to": "/gemelo" },
         { "label": "Métricas de solidez", "to": "/metricas" }
       ]
     },
@@ -595,11 +595,11 @@
     {
       "id": "reply_default",
       "keywords": ["*"],
-      "answer": "Puedo orientar sobre el conocimiento simulado de AndesPack: riesgo de liner, áreas del Gemelo, dolores y acciones, métricas o novedades del sector. Probá preguntar por quiebre, finanzas, descuentos o solidez de la pyme.",
+      "answer": "Puedo orientar sobre el conocimiento simulado de AndesPack: riesgo de liner, áreas de CAUCE, dolores y acciones, métricas o novedades del sector. Probá preguntar por quiebre, finanzas, descuentos o solidez de la pyme.",
       "linkHints": [
         { "label": "Inicio", "to": "/inicio" },
         { "label": "Proceso", "to": "/proceso" },
-        { "label": "Gemelo", "to": "/gemelo" }
+        { "label": "CAUCE", "to": "/gemelo" }
       ]
     }
   ]

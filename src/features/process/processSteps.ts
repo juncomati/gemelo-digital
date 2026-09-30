@@ -38,12 +38,12 @@ export const PROCESS_STEPS: ProcessStep[] = [
   {
     id: "gemelo",
     number: "03",
-    title: "Gemelo vivo",
-    shortTitle: "Gemelo",
+    title: "CAUCE",
+    shortTitle: "CAUCE",
     summary: "Documentos y hechos se relacionan en un modelo operable de la empresa.",
     detail:
       "Producto, materia prima, proveedor, demanda y riesgo quedan conectados. Hechos e hipótesis se distinguen; los vacíos aparecen como objetivos de conocimiento.",
-    cta: { label: "Explorar el Gemelo", to: "/gemelo/entity_product_wine6" },
+    cta: { label: "CAUCE", to: "/gemelo/entity_product_wine6" },
     demoState: "Nodo focal: Caja Vino x6 Reforzada",
   },
   {
@@ -62,7 +62,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     number: "05",
     title: "Semana a semana",
     shortTitle: "Semana",
-    summary: "Un ritual semanal mantiene el Gemelo útil y las decisiones trazables.",
+    summary: "Un ritual semanal mantiene a CAUCE útil y las decisiones trazables.",
     detail:
       "Cada semana el equipo prioriza en Inicio, decide con evidencia, registra en Actividad, revisa Métricas y ajusta fuentes o vacíos de conocimiento.",
     ritual: [

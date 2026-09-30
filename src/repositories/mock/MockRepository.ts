@@ -294,7 +294,7 @@ export class MockRepository implements DemoRepository {
         id: "fallback",
         keywords: ["*"],
         answer:
-          "No encontré una respuesta específica en el conocimiento simulado. Revisá Inicio, Gemelo o Novedades.",
+          "No encontré una respuesta específica en el conocimiento simulado. Revisá Inicio, CAUCE o Novedades.",
         linkHints: [{ label: "Inicio", to: "/inicio" }],
       };
     }

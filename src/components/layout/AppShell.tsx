@@ -26,10 +26,10 @@ const pageMeta: Record<string, { title: string; description: string; period?: bo
   },
   "/documentacion": {
     title: "Documentación",
-    description: "Fuentes, vigencia y contribución al Gemelo.",
+    description: "Fuentes, vigencia y contribución a CAUCE.",
   },
   "/gemelo": {
-    title: "Gemelo",
+    title: "CAUCE",
     description: "Modelo vivo de la empresa y sus relaciones.",
   },
   "/resultados": {

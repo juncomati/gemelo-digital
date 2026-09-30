@@ -2,13 +2,13 @@
 
 ## 2026-09-29 — Vistas para un pitch de cuatro minutos
 
-- **Decisión:** Cuatro lecturas simuladas sobre el caso de liner de AndesPack, sin backend ni red. En Gemelo, un grafo dirigido entre Operaciones, Compras, Finanzas, Calidad, Personas y el quiebre; al elegir el quiebre se ilumina solo el camino Calidad → Compras → Operaciones → Finanzas → Personas. En Proceso, el flujo Pedido → corte → consumo de liner → armado → despacho, con grosor por volumen, color por espera, lentes Pedido / Compra / Lote / Factura y un interruptor por área. En Resultados, barras agrupadas de comprar ya / comprar parcial / esperar (costo, plazo, calidad, caja, todo marcado simulado) y el mismo mapa en dos variantes, con los pasos compartidos atenuados. En Aprobaciones, una tira por área con impacto proyectado y horas hasta aprobar. La aprobación suma un evento de actividad y mueve solo costo, caja y entregas; el contador de pendientes sigue el estado de la bandeja.
+- **Decisión:** Cuatro lecturas simuladas sobre el caso de liner de AndesPack, sin backend ni red. En CAUCE, un grafo dirigido entre Operaciones, Compras, Finanzas, Calidad, Personas y el quiebre; al elegir el quiebre se ilumina solo el camino Calidad → Compras → Operaciones → Finanzas → Personas. En Proceso, el flujo Pedido → corte → consumo de liner → armado → despacho, con grosor por volumen, color por espera, lentes Pedido / Compra / Lote / Factura y un interruptor por área. En Resultados, barras agrupadas de comprar ya / comprar parcial / esperar (costo, plazo, calidad, caja, todo marcado simulado) y el mismo mapa en dos variantes, con los pasos compartidos atenuados. En Aprobaciones, una tira por área con impacto proyectado y horas hasta aprobar. La aprobación suma un evento de actividad y mueve solo costo, caja y entregas; el contador de pendientes sigue el estado de la bandeja.
 - **Motivo:** Poder narrar riesgo → evidencia → opción → aprobación → métricas en una sola pasada.
 - **Alternativas descartadas:** Llamadas de red, cifras presentadas como medición real, un segundo evento de actividad por la misma aprobación.
 - **Impacto:** Semilla de estado `2026.09.29-3`. Las cifras de costo, caja y entregas viven en el estado de la demo y salen de `resolveApproval`.
 - **Documentos afectados:** `03_SCREEN_SPECIFICATIONS.md`, `DECISIONS.md`.
 
-## 2026-09-18 — Rubros, Gemelo por áreas, Consultor y Novedades
+## 2026-09-18 — Rubros, CAUCE por áreas, Consultor y Novedades
 
 - **Decisión:** Filtro global por rubro (opción A); 12 áreas mínimas pyme con semáforo; dolores/acciones en Proceso; Consultor con respuestas mock (pedido comercial “Consultor IA”, etiqueta UI “Consultor”); Novedades sectoriales simuladas; extensión en `pyme-extension.json`.
 - **Motivo:** Segmentar cobertura desigual, mostrar solidez operativa y ayudar a decidir sin backend.

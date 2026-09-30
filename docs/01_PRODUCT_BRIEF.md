@@ -57,7 +57,7 @@ Las decisiones de impacto requieren una aprobación explícita. Aprobar en la de
 
 ### Una sola historia
 
-Inicio, Gemelo, Resultados, Aprobaciones, Actividad y Métricas deben mostrar el mismo acontecimiento con valores, fechas y responsables consistentes.
+Inicio, CAUCE, Resultados, Aprobaciones, Actividad y Métricas deben mostrar el mismo acontecimiento con valores, fechas y responsables consistentes.
 
 ## Empresa ficticia
 

@@ -22,7 +22,7 @@ const links = [
   { to: "/inicio", label: "Inicio", icon: Home },
   { to: "/proceso", label: "Proceso", icon: Route },
   { to: "/documentacion", label: "Documentación", icon: FileText },
-  { to: "/gemelo", label: "Gemelo", icon: Boxes },
+  { to: "/gemelo", label: "CAUCE", icon: Boxes },
   { to: "/resultados", label: "Resultados", icon: Sparkles },
   { to: "/aprobaciones", label: "Aprobaciones", icon: ShieldCheck },
   { to: "/actividad", label: "Actividad", icon: Activity },

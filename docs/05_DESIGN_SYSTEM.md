@@ -109,7 +109,7 @@ Muestra fecha relativa y estado. Al pasar el cursor, muestra fecha absoluta.
 
 ### Panel de evidencia
 
-Debe poder abrirse desde Resultado, Gemelo y Aprobación sin perder contexto.
+Debe poder abrirse desde Resultado, CAUCE y Aprobación sin perder contexto.
 
 ### Tabla
 
@@ -140,7 +140,7 @@ Confirma acciones breves. No reemplaza información importante ni errores que re
 - No usar más de seis colores por gráfico.
 - Marcar `Estimado` cuando corresponda.
 
-## Mapa del Gemelo
+## Mapa de CAUCE
 
 - Mostrar entre 8 y 16 nodos en la vista inicial.
 - Nodo focal destacado.

@@ -22,7 +22,7 @@ La presentación usa exactamente diez diapositivas y no menciona herramientas in
 
 **Mensaje:** conocimiento, relaciones y evidencia forman una representación conectada.
 
-**Copy:** El gemelo distingue hechos, hipótesis y vacíos. Cada conclusión conserva su fuente y vigencia.
+**Copy:** CAUCE distingue hechos, hipótesis y vacíos. Cada conclusión conserva su fuente y vigencia.
 
 ## 4. Ciclo operativo con control humano
 

@@ -58,7 +58,7 @@ Además, revisar manualmente:
 - El detalle enlaza entidades y resultados.
 - La carga simulada no lee ni sube contenido.
 
-## Gemelo
+## CAUCE
 
 - Mapa y Explorador muestran las mismas entidades clave.
 - El nodo focal se selecciona correctamente.
