@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { RUBROS } from "@/domain/types";
 import { formatPercent } from "@/lib/format";
 import { matchesRubroFilter, pymeSolidity } from "@/lib/rubros";
+import { DecisionImpactCards } from "./DecisionImpactCards";
 
 export function MetricsPage() {
   const { state, activeRubros } = useDemo();
@@ -65,6 +66,7 @@ export function MetricsPage() {
 
   return (
     <div className="page-enter space-y-6">
+      <DecisionImpactCards current={state.metrics.current} />
       <div className="flex flex-wrap items-center gap-3">
         <label className="text-sm font-medium text-text-700">
           Período

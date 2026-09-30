@@ -2,6 +2,7 @@ import seed from "../../../mock-data/canonical-scenario.json" with { type: "json
 import extension from "../../../mock-data/pyme-extension.json" with { type: "json" };
 import type { DemoState, DocumentItem, Result, RubroId, RubroCoverage } from "@/domain/types";
 import { RUBROS } from "@/domain/types";
+import { IMPACT_BASELINE } from "@/domain/pitchScenario";
 import { rubrosFromCategory, rubrosFromResultArea } from "@/lib/rubros";
 
 function buildRubroCoverage(
@@ -55,13 +56,19 @@ export function loadCanonicalSeed(): DemoState {
     ...data,
     metadata: {
       ...data.metadata,
-      seedVersion: "2026.09.18-2",
+      seedVersion: "2026.09.29-3",
     },
     tenant: { ...data.tenant, dataMode: "synthetic" },
     documents,
     results,
     metrics: {
       ...data.metrics,
+      current: {
+        ...data.metrics.current,
+        simulatedCostUsd: IMPACT_BASELINE.costoUsd,
+        simulatedCashUsd: IMPACT_BASELINE.cajaUsd,
+        deliveriesAtRisk: IMPACT_BASELINE.entregasEnRiesgo,
+      },
       rubroCoverage: buildRubroCoverage(documents, results),
     },
     businessAreas: ext.businessAreas as DemoState["businessAreas"],

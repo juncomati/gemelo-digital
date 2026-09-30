@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { PROCESS_STEPS } from "./processSteps";
+import { OrderFlowMap } from "./OrderFlowMap";
 import { useDemo } from "@/app/DemoProvider";
 import { matchesRubroFilter } from "@/lib/rubros";
 
@@ -51,6 +52,8 @@ export function ProcessPage() {
           </a>
         </nav>
       </Card>
+
+      <OrderFlowMap />
 
       <ol className="relative space-y-6">
         <div

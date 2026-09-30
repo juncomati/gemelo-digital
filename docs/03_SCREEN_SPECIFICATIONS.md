@@ -511,3 +511,23 @@ Cada fila muestra la etiqueta `Simulación`.
 - Ninguna opción menciona proveedores internos.
 - El entorno se describe como `dedicado y aislado` sin explicar infraestructura.
 - Desconectar una fuente no realiza llamadas externas.
+
+## Pitch de cuatro minutos
+
+Lecturas adicionales sobre el caso simulado de papel liner. No reemplazan el semáforo de áreas, el ciclo con el cliente, el listado de resultados ni la bandeja de aprobaciones.
+
+### Gemelo
+
+Grafo dirigido con Operaciones, Compras, Finanzas, Calidad, Personas y el quiebre de liner. Cada flecha es `evidencia`, `depende de` o `hueco`. Al seleccionar el quiebre se ilumina un solo camino: Calidad (spec de liner) → Compras (plazo) → Operaciones (colas) → Finanzas (caja) → Personas (turno extra).
+
+### Proceso
+
+Un flujo: Pedido → corte → consumo de liner → armado → despacho. El grosor es volumen de pedidos y el color es espera. El tramo hacia consumo de liner es el más grueso y rojo, y ese nodo muestra un segundo conteo de pedidos en espera. Los lentes Pedido, Compra, Lote y Factura recentran el mismo mapa. Cada área muestra u oculta solo sus enlaces.
+
+### Resultados
+
+Tres opciones en barras agrupadas: comprar ya, comprar parcial y esperar. Cada una muestra costo, plazo, calidad y caja, con la marca `simulado`. Comprar ya es la barra resaltada. El mismo mapa se superpone en dos variantes: los pasos compartidos quedan atenuados y la diferencia fuerte es el camino extra (compra urgente, reproceso).
+
+### Aprobaciones y métricas
+
+Tira de recomendaciones abiertas por área, con impacto proyectado en costo, caja y entregas, y horas hasta la aprobación. Confirmar la aprobación agrega un evento en Actividad y mueve solo esas tres cifras en Métricas.
