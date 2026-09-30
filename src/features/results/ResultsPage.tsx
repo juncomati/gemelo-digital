@@ -11,6 +11,7 @@ import {
   resultStatusLabel,
 } from "@/lib/format";
 import { matchesRubroFilter } from "@/lib/rubros";
+import { OptionComparison } from "./OptionComparison";
 
 export function ResultsPage() {
   const { state } = useDemo();
@@ -40,6 +41,7 @@ export function ResultsPage() {
 
   return (
     <div className="page-enter space-y-6">
+      <OptionComparison />
       <section className="card-surface flex flex-wrap gap-3 p-4">
         <select
           className="h-10 rounded-lg border border-border-200 px-3 text-sm"

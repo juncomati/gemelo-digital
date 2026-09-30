@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/Card";
 import type { AreaHealth, BusinessArea } from "@/domain/types";
 import { cn, findUserName, formatAbsoluteDate } from "@/lib/format";
 import { matchesRubroFilter, pymeSolidity } from "@/lib/rubros";
+import { CausalAreaGraph } from "./CausalAreaGraph";
 
 const healthTone: Record<AreaHealth, string> = {
   healthy: "border-green-600 bg-green-600 text-white",
@@ -80,6 +81,7 @@ export function TwinPage() {
 
   return (
     <div className="page-enter space-y-6">
+      <CausalAreaGraph />
       <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
         <Card className="p-4">
           <p className="text-xs font-medium uppercase tracking-wide text-text-600">Solidez pyme</p>

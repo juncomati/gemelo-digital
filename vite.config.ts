@@ -13,5 +13,7 @@ export default defineConfig({
   server: {
     port: 5173,
     strictPort: true,
+    // El túnel temporal de la demo usa un host público que cambia.
+    allowedHosts: true,
   },
 });

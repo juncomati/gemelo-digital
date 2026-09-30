@@ -219,6 +219,12 @@ export interface MetricCurrent {
   estimatedOpportunitiesEquivalentUsd: number;
   decisionsSupported?: number;
   risksResolved?: number;
+  /** Costo expuesto de la decisión de liner. Cifra simulada. */
+  simulatedCostUsd?: number;
+  /** Caja disponible. Cifra simulada. */
+  simulatedCashUsd?: number;
+  /** Entregas en riesgo. Cifra simulada. */
+  deliveriesAtRisk?: number;
 }
 
 export interface MetricTrendPoint {

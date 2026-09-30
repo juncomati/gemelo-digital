@@ -1,3 +1,4 @@
+import { applyApprovalImpact, readDecisionImpact } from "./pitchScenario";
 import type {
   Approval,
   ApprovalStatus,
@@ -72,8 +73,6 @@ export function resolveApproval(state: DemoState, input: ResolveApprovalInput): 
     summary = `Solicitó cambios en: ${approval.title}.`;
   }
 
-  const result = state.results.find((r) => r.id === approval.resultId);
-
   const approvals = state.approvals.map((item) =>
     item.id === approval.id
       ? {
@@ -121,11 +120,9 @@ export function resolveApproval(state: DemoState, input: ResolveApprovalInput): 
   ];
 
   const pendingApprovals = countPendingApprovals(approvals);
-  const decisionsSupported =
-    (state.metrics.current.decisionsSupported ?? 9) + (input.action === "approve" ? 1 : 0);
-  const risksResolved =
-    (state.metrics.current.risksResolved ?? 0) +
-    (input.action === "approve" && result?.type === "risk" ? 1 : 0);
+  const beforeImpact = readDecisionImpact(state.metrics.current);
+  const afterImpact =
+    input.action === "approve" ? applyApprovalImpact(beforeImpact, approval.id) : beforeImpact;
 
   return {
     ...state,
@@ -137,9 +134,9 @@ export function resolveApproval(state: DemoState, input: ResolveApprovalInput): 
       current: {
         ...state.metrics.current,
         pendingApprovals,
-        decisionsSupported,
-        risksResolved,
-        newResults: results.filter((r) => r.status === "new").length || state.metrics.current.newResults,
+        simulatedCostUsd: afterImpact.costoUsd,
+        simulatedCashUsd: afterImpact.cajaUsd,
+        deliveriesAtRisk: afterImpact.entregasEnRiesgo,
       },
     },
   };

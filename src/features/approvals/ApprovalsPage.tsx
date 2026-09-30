@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { ConfirmDialog } from "@/components/ui/ConfirmDialog";
 import { approvalStatusLabel, findUserName, formatAbsoluteDate } from "@/lib/format";
+import { DecisionStrip } from "./DecisionStrip";
 
 export function ApprovalsPage() {
   const { state, resolveApproval } = useDemo();
@@ -43,6 +44,7 @@ export function ApprovalsPage() {
 
   return (
     <div className="page-enter space-y-6">
+      <DecisionStrip />
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         <div className="card-surface p-4">
           <p className="text-xs font-medium uppercase tracking-wide text-text-600">Pendientes</p>
