@@ -20,9 +20,9 @@ export function ProcessPage() {
             Del primer contacto con el cliente al ritmo semana a semana
           </h3>
           <p className="mt-3 max-w-2xl text-sm text-white/75 md:text-base">
-            El Gemelo Digital Operativo no es una consulta puntual: es un ciclo que arranca con un
-            caso de uso, conecta conocimiento y termina en decisiones trazables que se repiten cada
-            semana.
+            CAUCE. El sistema de IA que entiende tu negocio y ordena tus decisiones. No es una
+            consulta puntual: es un ciclo que arranca con un caso de uso, conecta conocimiento y
+            termina en decisiones trazables que se repiten cada semana.
           </p>
         </div>
         <nav

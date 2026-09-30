@@ -6,7 +6,7 @@ test("recorrido ejecutivo principal", async ({ page }) => {
   await page.goto("/inicio");
   await expect(page.getByText("Demo · Datos simulados")).toBeVisible();
   await expect(page.getByRole("heading", { name: /Buen día, Laura/i })).toBeVisible();
-  await expect(page.getByText("Proceso del Gemelo")).toBeVisible();
+  await expect(page.getByText("Proceso de CAUCE")).toBeVisible();
   await expect(page.getByRole("group", { name: "Filtro por rubro" })).toBeVisible();
 
   await page.getByRole("button", { name: "Finanzas" }).click();

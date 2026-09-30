@@ -55,9 +55,11 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
             Makers
           </p>
           <h1 className="font-display mt-2 text-[1.35rem] font-semibold leading-tight tracking-tight">
-            Gemelo Digital Operativo
+            CAUCE
           </h1>
-          <p className="mt-2 text-xs text-white/55">Conocimiento operable para decidir</p>
+          <p className="mt-2 text-xs text-white/55">
+            El sistema de IA que entiende tu negocio y ordena tus decisiones.
+          </p>
         </div>
         <nav className="flex-1 space-y-0.5 overflow-y-auto px-3 py-4">
           {links.map(({ to, label, icon: Icon }) => (

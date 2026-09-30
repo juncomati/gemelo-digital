@@ -9,7 +9,7 @@ export function ProcessSummary() {
       <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border-200 bg-gradient-to-r from-navy-950 to-navy-800 px-5 py-4 text-white">
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cyan-400">
-            Proceso del Gemelo
+            Proceso de CAUCE
           </p>
           <p className="font-display mt-1 text-lg font-semibold">
             Del cliente al ritmo semanal

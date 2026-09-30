@@ -1,8 +1,10 @@
 # 01 — Product brief
 
-## Nombre de trabajo
+## Nombre
 
-**Gemelo Digital Operativo v2**
+**CAUCE**
+
+El sistema de IA que entiende tu negocio y ordena tus decisiones.
 
 ## Propósito de la demo
 
@@ -19,7 +21,7 @@ La experiencia debe sentirse como un producto empresarial terminado, no como un 
 
 ## Propuesta de valor
 
-Gemelo Digital Operativo crea una representación viva del funcionamiento de una empresa. Convierte información fragmentada en contexto verificable para apoyar decisiones, priorizar situaciones relevantes y dar seguimiento al trabajo.
+CAUCE crea una representación viva del funcionamiento de una empresa. Convierte información fragmentada en contexto verificable para apoyar decisiones, priorizar situaciones relevantes y dar seguimiento al trabajo.
 
 No sustituye al ERP, al CRM ni al equipo. Organiza el conocimiento que hoy se encuentra repartido, lo relaciona con la operación y lo convierte en resultados accionables.
 

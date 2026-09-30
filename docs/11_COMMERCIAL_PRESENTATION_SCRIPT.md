@@ -2,11 +2,11 @@
 
 La presentación usa exactamente diez diapositivas y no menciona herramientas internas.
 
-## 1. Gemelo Digital Operativo
+## 1. CAUCE
 
 **Mensaje:** una visión ejecutiva de la empresa que aprende de su operación.
 
-**Copy:** Más contexto para decidir. Más claridad para ejecutar.
+**Copy:** El sistema de IA que entiende tu negocio y ordena tus decisiones.
 
 **Nota:** abrir desde el resultado de negocio, no desde inteligencia artificial.
 

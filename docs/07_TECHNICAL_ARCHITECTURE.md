@@ -116,7 +116,7 @@ Los errores se habilitan mediante un selector solo disponible en modo desarrollo
 ## Variables públicas
 
 ```dotenv
-VITE_APP_NAME=Gemelo Digital Operativo
+VITE_APP_NAME=CAUCE
 VITE_DEMO_MODE=true
 VITE_DEFAULT_TENANT_ID=tenant_andespack
 VITE_ENABLE_FAKE_LATENCY=true

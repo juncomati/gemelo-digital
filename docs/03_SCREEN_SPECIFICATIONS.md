@@ -68,7 +68,7 @@ Bloque compacto con las cinco etapas (Arranque, Fuentes, Gemelo, Decisiones, Sem
 
 ### Objetivo
 
-Explicar el arco del Gemelo Digital Operativo desde el arranque con el cliente hasta el ritmo semana a semana.
+Explicar el arco de CAUCE desde el arranque con el cliente hasta el ritmo semana a semana.
 
 ### Etapas
 

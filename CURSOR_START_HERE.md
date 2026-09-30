@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Construir una demo local, navegable y visualmente terminada de **Gemelo Digital Operativo v2**. La demo debe funcionar con datos sintéticos, sin servicios externos, y contar una historia empresarial coherente de principio a fin.
+Construir una demo local, navegable y visualmente terminada de **CAUCE**. El sistema de IA que entiende tu negocio y ordena tus decisiones. La demo debe funcionar con datos sintéticos, sin servicios externos, y contar una historia empresarial coherente de principio a fin.
 
 ## Lectura obligatoria antes de programar
 

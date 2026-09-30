@@ -9,7 +9,7 @@ function num(value: string | undefined, fallback: number): number {
 }
 
 export const env = {
-  appName: import.meta.env.VITE_APP_NAME ?? "Gemelo Digital Operativo",
+  appName: import.meta.env.VITE_APP_NAME ?? "CAUCE",
   demoMode: bool(import.meta.env.VITE_DEMO_MODE, true),
   tenantId: import.meta.env.VITE_DEFAULT_TENANT_ID ?? "tenant_andespack",
   fakeLatency: bool(import.meta.env.VITE_ENABLE_FAKE_LATENCY, false),

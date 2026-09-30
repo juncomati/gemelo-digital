@@ -1,6 +1,8 @@
-# Gemelo Digital Operativo v2 — Paquete de demo
+# CAUCE — Paquete de demo
 
-Este directorio contiene la definición funcional, visual y técnica para que Cursor construya una demo navegable de **Gemelo Digital Operativo v2** con datos completamente simulados.
+**CAUCE.** El sistema de IA que entiende tu negocio y ordena tus decisiones.
+
+Este directorio contiene la definición funcional, visual y técnica para que Cursor construya una demo navegable de **CAUCE** con datos completamente simulados.
 
 La demo tiene un objetivo comercial: permitir que un prospecto comprenda el producto en menos de cinco minutos y vea un recorrido coherente desde una señal operativa hasta una decisión aprobada y trazable.
 
