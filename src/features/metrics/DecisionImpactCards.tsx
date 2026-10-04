@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/Card";
 import {
   IMPACT_BASELINE,
-  formatSimulatedUsd,
+  formatSimulatedArs,
   readDecisionImpact,
 } from "@/domain/pitchScenario";
 import type { MetricCurrent } from "@/domain/types";
@@ -11,14 +11,14 @@ export function DecisionImpactCards({ current }: { current: MetricCurrent }) {
   const rows = [
     {
       label: "Costo expuesto",
-      value: formatSimulatedUsd(impact.costoUsd),
-      before: formatSimulatedUsd(IMPACT_BASELINE.costoUsd),
+      value: formatSimulatedArs(impact.costoUsd),
+      before: formatSimulatedArs(IMPACT_BASELINE.costoUsd),
       moved: impact.costoUsd !== IMPACT_BASELINE.costoUsd,
     },
     {
       label: "Caja disponible",
-      value: formatSimulatedUsd(impact.cajaUsd),
-      before: formatSimulatedUsd(IMPACT_BASELINE.cajaUsd),
+      value: formatSimulatedArs(impact.cajaUsd),
+      before: formatSimulatedArs(IMPACT_BASELINE.cajaUsd),
       moved: impact.cajaUsd !== IMPACT_BASELINE.cajaUsd,
     },
     {

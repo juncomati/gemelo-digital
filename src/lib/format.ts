@@ -1,7 +1,17 @@
 import type { DemoState, Priority, ResultStatus, ApprovalStatus, TwinEntityType } from "@/domain/types";
 
+const arsFormatter = new Intl.NumberFormat("es-AR", {
+  style: "currency",
+  currency: "ARS",
+  maximumFractionDigits: 0,
+});
+
 export function formatPercent(value: number): string {
   return `${Math.round(value * 100)}%`;
+}
+
+export function formatArs(value: number): string {
+  return arsFormatter.format(Math.round(value));
 }
 
 export function confidenceLabel(value: number): "Alta" | "Media" | "Baja" {

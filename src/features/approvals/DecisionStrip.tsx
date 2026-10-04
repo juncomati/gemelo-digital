@@ -3,7 +3,7 @@ import { useDemo } from "@/app/DemoProvider";
 import {
   approvalArea,
   formatHoursUntil,
-  formatSimulatedUsd,
+  formatSimulatedArs,
   hoursUntil,
   projectApprovalImpact,
   readDecisionImpact,
@@ -57,13 +57,13 @@ export function DecisionStrip() {
                 <div className="flex justify-between gap-3">
                   <dt className="text-text-600">Costo</dt>
                   <dd className="text-right font-semibold">
-                    {projected ? formatSimulatedUsd(projected.costoUsd) : "Sin cifra simulada"}
+                    {projected ? formatSimulatedArs(projected.costoUsd) : "Sin cifra simulada"}
                   </dd>
                 </div>
                 <div className="flex justify-between gap-3">
                   <dt className="text-text-600">Caja</dt>
                   <dd className="text-right font-semibold">
-                    {projected ? formatSimulatedUsd(projected.cajaUsd) : "Sin cifra simulada"}
+                    {projected ? formatSimulatedArs(projected.cajaUsd) : "Sin cifra simulada"}
                   </dd>
                 </div>
                 <div className="flex justify-between gap-3">

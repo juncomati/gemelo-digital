@@ -56,7 +56,7 @@ export function loadCanonicalSeed(): DemoState {
     ...data,
     metadata: {
       ...data.metadata,
-      seedVersion: "2026.09.29-3",
+      seedVersion: "2026.10.04-ars",
     },
     tenant: { ...data.tenant, dataMode: "synthetic" },
     documents,

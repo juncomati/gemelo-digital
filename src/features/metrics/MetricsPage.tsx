@@ -4,7 +4,7 @@ import { TrendChart } from "@/components/charts/TrendChart";
 import { HealthPieChart, RubroBarChart } from "@/components/charts/BoardCharts";
 import { Card } from "@/components/ui/Card";
 import { RUBROS } from "@/domain/types";
-import { formatPercent } from "@/lib/format";
+import { formatArs, formatPercent } from "@/lib/format";
 import { matchesRubroFilter, pymeSolidity } from "@/lib/rubros";
 import { DecisionImpactCards } from "./DecisionImpactCards";
 
@@ -105,7 +105,7 @@ export function MetricsPage() {
           ],
           [
             "Oportunidades",
-            `USD ${m.estimatedOpportunitiesEquivalentUsd.toLocaleString("es-AR")}`,
+            formatArs(m.estimatedOpportunitiesEquivalentUsd),
             "estimado",
           ],
           ["Cobertura conocimiento", formatPercent(m.knowledgeCoverage), "%"],

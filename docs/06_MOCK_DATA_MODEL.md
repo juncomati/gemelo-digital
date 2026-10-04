@@ -234,7 +234,7 @@ Crear esquemas Zod equivalentes y validar:
 - Las relaciones apuntan a IDs existentes.
 - Las fechas no superan arbitrariamente `demoNow` salvo vencimientos o proyecciones.
 - Confianza se almacena entre 0 y 1 y se formatea como porcentaje.
-- Los impactos económicos se guardan como texto con `estimado` y `USD equivalentes`.
+- Los impactos económicos se guardan como texto en pesos argentinos, con `estimado` cuando corresponde.
 - Los contadores visibles se derivan de colecciones o de agregados documentados.
 
 ## Archivo canónico

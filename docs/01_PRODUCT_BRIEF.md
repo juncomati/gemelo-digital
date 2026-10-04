@@ -74,7 +74,7 @@ Empresa ficticia de San Juan dedicada a fabricar embalajes de cartón corrugado 
 | Depósitos | 3 |
 | Cobertura comercial | Cuyo y región Centro |
 
-La demo expresa impactos económicos en `USD equivalentes` para mantener la historia estable en el tiempo. Todos los valores son simulados.
+La demo expresa impactos económicos en pesos argentinos. Todos los valores son simulados.
 
 ## Personas visibles
 
@@ -93,7 +93,7 @@ La plataforma:
 
 1. relaciona el pronóstico comercial, las órdenes abiertas, el inventario y el plazo del proveedor;
 2. identifica riesgo de quiebre entre el 28 y el 30 de septiembre de 2026;
-3. estima USD 18.400 equivalentes de ventas expuestas;
+3. estima $ 18.400 de ventas expuestas;
 4. recomienda adelantar una orden de compra de 18 toneladas;
 5. solicita aprobación de Operaciones;
 6. registra la decisión simulada;
@@ -101,7 +101,7 @@ La plataforma:
 
 ## Historias secundarias
 
-- Reactivación potencial de 14 clientes inactivos, con USD 32.000 equivalentes de oportunidad estimada.
+- Reactivación potencial de 14 clientes inactivos, con $ 32.000 de oportunidad estimada.
 - Tres fichas técnicas próximas a vencer.
 - Dos entregas con probabilidad de demora.
 - Tiempo simulado de preparación de cotizaciones: 5,2 horas de línea base frente a 1,4 horas actuales.

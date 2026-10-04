@@ -419,7 +419,7 @@
       "summary": "Aprobación pendiente en Operaciones.",
       "areaId": "area_compras",
       "status": "in_progress",
-      "estimatedImpact": "USD 18.400 equivalentes protegidos, estimado",
+      "estimatedImpact": "$ 18.400 protegidos, estimado",
       "resultId": "result_risk_liner"
     },
     {
@@ -472,7 +472,7 @@
       "summary": "Revisión comercial de 14 cuentas.",
       "areaId": "area_clientes",
       "status": "in_progress",
-      "estimatedImpact": "USD 32.000 equivalentes de oportunidad estimada",
+      "estimatedImpact": "$ 32.000 de oportunidad estimada",
       "resultId": "result_reactivate_customers"
     }
   ],

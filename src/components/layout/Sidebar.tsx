@@ -41,7 +41,7 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
     <>
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-40 flex w-[248px] flex-col border-r border-white/5 bg-navy-950 text-white transition-transform duration-200 ease-[var(--ease-out-soft)] lg:static lg:translate-x-0",
+          "fixed inset-y-0 left-0 z-40 flex h-dvh w-[248px] flex-col border-r border-white/5 bg-navy-950 text-white transition-transform duration-200 ease-[var(--ease-out-soft)] lg:sticky lg:top-0 lg:h-dvh lg:translate-x-0",
           open ? "translate-x-0" : "-translate-x-full",
         )}
         aria-label="Navegación principal"

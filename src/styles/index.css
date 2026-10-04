@@ -42,6 +42,10 @@
     min-height: 100%;
   }
 
+  html {
+    scroll-behavior: auto;
+  }
+
   body {
     margin: 0;
     font-family: var(--font-sans);
@@ -51,7 +55,6 @@
       radial-gradient(ellipse 120% 80% at 0% -10%, rgb(25 181 209 / 8%), transparent 50%),
       radial-gradient(ellipse 90% 60% at 100% 0%, rgb(18 80 106 / 7%), transparent 45%),
       linear-gradient(180deg, #f2f5f8 0%, #eef2f6 40%, #e8eef3 100%);
-    background-attachment: fixed;
     font-size: 16px;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
@@ -147,16 +150,6 @@
 
   .app-canvas {
     position: relative;
-  }
-
-  .app-canvas::before {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
-    opacity: 0.4;
-    mix-blend-mode: multiply;
   }
 }
 

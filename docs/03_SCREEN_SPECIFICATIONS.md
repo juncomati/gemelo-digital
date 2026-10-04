@@ -37,7 +37,7 @@ Bloque compacto con las cinco etapas (Arranque, Fuentes, CAUCE, Decisiones, Sema
 
 - Producto: Caja Vino x6 Reforzada.
 - Ventana estimada: 28–30 de septiembre de 2026.
-- Ventas expuestas: USD 18.400 equivalentes.
+- Ventas expuestas: $ 18.400.
 - Confianza: 91%.
 - Responsable: Martín Castro.
 - Acción: `Revisar recomendación`.
@@ -332,8 +332,8 @@ Dar control humano sobre decisiones y acciones sensibles.
 - Solicitada por: Sistema.
 - Responsable: Martín Castro.
 - Límite: 18 de septiembre de 2026, 17:00.
-- Costo estimado: USD 11.700 equivalentes.
-- Ventas protegidas estimadas: USD 18.400 equivalentes.
+- Costo estimado: $ 11.700.
+- Ventas protegidas estimadas: $ 18.400.
 - Confianza: 91%.
 
 ### Detalle
@@ -432,7 +432,7 @@ Mostrar adopción, calidad del conocimiento e impacto potencial.
 - 37 horas mensuales estimadas ahorradas.
 - 86% de entregas en fecha frente a 78% de línea base.
 - 5,2 h de línea base frente a 1,4 h para preparar cotizaciones.
-- USD 48.600 equivalentes de oportunidades detectadas.
+- $ 48.600 de oportunidades detectadas.
 
 ### Calidad del conocimiento
 

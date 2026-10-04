@@ -11,7 +11,7 @@
     "name": "AndesPack Industrial S.A.",
     "industry": "Embalajes de cartón corrugado",
     "timezone": "America/Argentina/Buenos_Aires",
-    "currencyLabel": "USD equivalentes",
+    "currencyLabel": "Pesos argentinos",
     "location": "San Juan, Argentina",
     "employees": 82,
     "activeCustomers": 126,
@@ -569,7 +569,7 @@
       "priority": "critical",
       "status": "requires_approval",
       "summary": "La cobertura estimada de nueve días es menor que el plazo habitual de reposición de doce días.",
-      "expectedImpact": "USD 18.400 equivalentes de ventas expuestas entre el 28 y el 30 de septiembre, valor estimado.",
+      "expectedImpact": "$ 18.400 de ventas expuestas entre el 28 y el 30 de septiembre, valor estimado.",
       "recommendation": "Adelantar una orden de compra simulada de 18 toneladas de papel liner.",
       "confidence": 0.91,
       "evidenceIds": ["evidence_demand_21", "evidence_stock_9_days", "evidence_lead_12_days", "evidence_open_orders"],
@@ -586,7 +586,7 @@
       "priority": "high",
       "status": "in_review",
       "summary": "Catorce clientes conservan condiciones comerciales vigentes y no compraron en 120 días.",
-      "expectedImpact": "USD 32.000 equivalentes de oportunidad estimada.",
+      "expectedImpact": "$ 32.000 de oportunidad estimada.",
       "recommendation": "Revisar la lista y preparar una campaña comercial personalizada.",
       "confidence": 0.86,
       "evidenceIds": ["evidence_inactive_14"],
@@ -686,8 +686,8 @@
       "requestedBy": "system",
       "assignedTo": "user_martin",
       "dueAt": "2026-09-18T17:00:00-03:00",
-      "estimatedCost": "USD 11.700 equivalentes, estimado",
-      "estimatedProtectedValue": "USD 18.400 equivalentes, estimado",
+      "estimatedCost": "$ 11.700, estimado",
+      "estimatedProtectedValue": "$ 18.400, estimado",
       "history": [
         {
           "at": "2026-09-18T10:21:00-03:00",
@@ -707,7 +707,7 @@
       "assignedTo": "user_sofia",
       "dueAt": "2026-09-19T12:00:00-03:00",
       "estimatedCost": "Sin costo externo en la demo",
-      "estimatedProtectedValue": "USD 32.000 equivalentes de oportunidad estimada",
+      "estimatedProtectedValue": "$ 32.000 de oportunidad estimada",
       "history": [
         {
           "at": "2026-09-18T09:42:00-03:00",
@@ -909,7 +909,7 @@
     "locale": "es-AR",
     "timezone": "America/Argentina/Buenos_Aires",
     "dateFormat": "dd/MM/yyyy",
-    "currencyLabel": "USD equivalentes",
+    "currencyLabel": "Pesos argentinos",
     "notifications": {
       "criticalAlerts": true,
       "dailyDigest": true,

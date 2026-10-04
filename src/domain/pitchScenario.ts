@@ -1,4 +1,5 @@
 import type { MetricCurrent } from "./types";
+import { formatArs } from "@/lib/format";
 
 export type CausalKind = "evidencia" | "depende" | "hueco";
 export type FlowArea = "operaciones" | "compras" | "finanzas" | "calidad" | "personas";
@@ -251,10 +252,10 @@ export const BUY_OPTIONS: BuyOption[] = [
     label: "Comprar ya",
     recommended: true,
     figures: [
-      { key: "costo", label: "Costo", score: 62, display: "USD 11.700", color: FIG_COLORS.costo },
+      { key: "costo", label: "Costo", score: 62, display: "$ 11.700", color: FIG_COLORS.costo },
       { key: "plazo", label: "Plazo", score: 92, display: "5 días", color: FIG_COLORS.plazo },
       { key: "calidad", label: "Calidad", score: 96, display: "96", color: FIG_COLORS.calidad },
-      { key: "caja", label: "Caja", score: 74, display: "USD 42.300", color: FIG_COLORS.caja },
+      { key: "caja", label: "Caja", score: 74, display: "$ 42.300", color: FIG_COLORS.caja },
     ],
   },
   {
@@ -262,10 +263,10 @@ export const BUY_OPTIONS: BuyOption[] = [
     label: "Comprar parcial",
     recommended: false,
     figures: [
-      { key: "costo", label: "Costo", score: 78, display: "USD 6.400", color: FIG_COLORS.costo },
+      { key: "costo", label: "Costo", score: 78, display: "$ 6.400", color: FIG_COLORS.costo },
       { key: "plazo", label: "Plazo", score: 58, display: "9 días", color: FIG_COLORS.plazo },
       { key: "calidad", label: "Calidad", score: 84, display: "84", color: FIG_COLORS.calidad },
-      { key: "caja", label: "Caja", score: 82, display: "USD 47.600", color: FIG_COLORS.caja },
+      { key: "caja", label: "Caja", score: 82, display: "$ 47.600", color: FIG_COLORS.caja },
     ],
   },
   {
@@ -273,10 +274,10 @@ export const BUY_OPTIONS: BuyOption[] = [
     label: "Esperar",
     recommended: false,
     figures: [
-      { key: "costo", label: "Costo", score: 22, display: "USD 28.400", color: FIG_COLORS.costo },
+      { key: "costo", label: "Costo", score: 22, display: "$ 28.400", color: FIG_COLORS.costo },
       { key: "plazo", label: "Plazo", score: 28, display: "14 días", color: FIG_COLORS.plazo },
       { key: "calidad", label: "Calidad", score: 48, display: "48", color: FIG_COLORS.calidad },
-      { key: "caja", label: "Caja", score: 36, display: "USD 19.600", color: FIG_COLORS.caja },
+      { key: "caja", label: "Caja", score: 36, display: "$ 19.600", color: FIG_COLORS.caja },
     ],
   },
 ];
@@ -357,8 +358,8 @@ export function applyApprovalImpact(
   return projectApprovalImpact(current, approvalId) ?? current;
 }
 
-export function formatSimulatedUsd(value: number): string {
-  return `USD ${Math.round(value).toLocaleString("es-AR")} simulado`;
+export function formatSimulatedArs(value: number): string {
+  return `${formatArs(value)} simulado`;
 }
 
 export function hoursUntil(dueAt: string, nowIso: string): number {
