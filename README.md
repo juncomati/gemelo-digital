@@ -44,7 +44,7 @@ npm run test:e2e
 - La primera versión será una SPA estática construida con React, TypeScript y Vite.
 - No tendrá backend, base de datos, autenticación real ni integraciones reales.
 - Todos los datos serán ficticios y la interfaz mostrará siempre `Demo · Datos simulados`.
-- El cliente verá únicamente la plataforma de Makers.
+- El cliente verá únicamente la plataforma.
 - La interfaz nunca nombrará motores, modelos, agentes, proveedores ni herramientas internas.
 - Toda recomendación importante mostrará evidencia, confianza, vigencia y responsable.
 - Las acciones sensibles se simularán mediante aprobaciones y nunca ejecutarán operaciones externas.
@@ -88,5 +88,5 @@ Inicio
 
 ## Propiedad y confidencialidad
 
-Este paquete es documentación interna de Makers. Puede nombrar componentes técnicos para orientar al equipo, pero el producto visible, la presentación comercial y cualquier material entregado al cliente deben respetar el enfoque de caja negra.
+Este paquete es documentación interna. Puede nombrar componentes técnicos para orientar al equipo, pero el producto visible, la presentación comercial y cualquier material entregado al cliente deben respetar el enfoque de caja negra.
 

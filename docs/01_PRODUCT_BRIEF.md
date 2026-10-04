@@ -31,13 +31,13 @@ No sustituye al ERP, al CRM ni al equipo. Organiza el conocimiento que hoy se en
 - dirección general;
 - responsables de Operaciones, Comercial y Administración;
 - potenciales aliados e incubadoras;
-- equipo interno de Makers.
+- equipo interno.
 
 ## Principios de producto
 
 ### Caja negra total
 
-El cliente ve únicamente la plataforma de Makers. La interfaz no revela motores, modelos, proveedores, herramientas, prompts ni procesos internos.
+El cliente ve únicamente la plataforma. La interfaz no revela motores, modelos, proveedores, herramientas, prompts ni procesos internos.
 
 ### Lenguaje empresarial
 

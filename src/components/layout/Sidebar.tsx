@@ -51,10 +51,7 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
             className="pointer-events-none absolute -right-8 -top-10 h-32 w-32 rounded-full bg-cyan-500/15 blur-2xl"
             aria-hidden
           />
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan-400">
-            Makers
-          </p>
-          <h1 className="font-display mt-2 text-[1.35rem] font-semibold leading-tight tracking-tight">
+          <h1 className="font-display text-[1.35rem] font-semibold leading-tight tracking-tight">
             CAUCE
           </h1>
           <p className="mt-2 text-xs text-white/55">

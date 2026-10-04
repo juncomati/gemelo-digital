@@ -95,7 +95,7 @@ interface ResultsRepository {
 }
 ```
 
-La primera implementación es local. Una implementación futura podrá llamar a la API de Makers sin cambiar los componentes de presentación.
+La primera implementación es local. Una implementación futura podrá llamar a una API sin cambiar los componentes de presentación.
 
 ## Estado
 
@@ -161,7 +161,7 @@ La evolución productiva deberá mantener esta frontera:
 
 ```text
 Plataforma del cliente
-  → API de Makers
+  → API
   → cola y orquestador
   → adaptador privado por tenant
   → perímetro operativo dedicado
